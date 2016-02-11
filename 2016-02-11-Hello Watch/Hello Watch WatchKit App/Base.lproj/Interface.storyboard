@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Hello_Watch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" alpha="0.0" id="akL-BM-zwq">
+                            <items>
+                                <label alignment="center" text="1" textAlignment="center" id="D6u-eT-H3G"/>
+                                <label alignment="center" text="Lap" id="MKQ-5v-9Cd"/>
+                            </items>
+                        </group>
+                        <timer alignment="center" verticalAlignment="center" textAlignment="center" id="yKT-LE-Qw8">
+                            <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </timer>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="OtT-Vg-PVv">
+                            <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="startTime" destination="AgC-eL-Hgc" id="oEt-ch-tj1"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lapCountLabel" destination="D6u-eT-H3G" id="ghm-Cr-cSL"/>
+                        <outlet property="lapLabelsGroup" destination="akL-BM-zwq" id="5a8-RC-mS6"/>
+                        <outlet property="startButton" destination="OtT-Vg-PVv" id="t86-Ep-Hhs"/>
+                        <outlet property="timer" destination="yKT-LE-Qw8" id="uAv-k2-Pwj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1186" y="568"/>
+        </scene>
+    </scenes>
+</document>
