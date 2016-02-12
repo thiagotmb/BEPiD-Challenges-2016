@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchBordoes_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" text="Catchphrases" textAlignment="center" id="8Vz-qn-jxv"/>
+                        <group width="1" alignment="left" id="MPS-JW-DLH">
+                            <items>
+                                <button alignment="left" title="Passar" id="L4O-sJ-woG">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.062871393489999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="nextCatchphraseAction" destination="AgC-eL-Hgc" id="9QW-bg-IkG"/>
+                                    </connections>
+                                </button>
+                                <button alignment="right" title="Salvar" id="00a-Wr-jPd">
+                                    <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="saveCatchphraseAction" destination="AgC-eL-Hgc" id="821-tb-CE3"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Saved" id="dk7-RX-Ch6"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Mostrar Bordões" id="Bb4-II-Dso">
+                            <color key="backgroundColor" red="0.26250861695500421" green="0.81332131410256414" blue="0.056039378752628079" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showCatchphrasesAction" destination="AgC-eL-Hgc" id="8bD-m0-INf"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="catchphraseLabel" destination="8Vz-qn-jxv" id="16z-30-tyv"/>
+                        <outlet property="catchphraseSaveIndicator" destination="dk7-RX-Ch6" id="RMF-46-vJU"/>
+                        <outlet property="showCatchphrasesButton" destination="Bb4-II-Dso" id="D5Y-7r-8jf"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>

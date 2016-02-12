@@ -16,7 +16,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var timer: WKInterfaceTimer!
     var timerIsRunning  = false
-    let countdownInSeconds : NSTimeInterval = 5
+    let countdownInSeconds : NSTimeInterval = 10
     
     
     @IBOutlet var startButton: WKInterfaceButton!

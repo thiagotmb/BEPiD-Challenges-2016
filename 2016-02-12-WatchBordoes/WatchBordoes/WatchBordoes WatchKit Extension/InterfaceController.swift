@@ -12,6 +12,25 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var showCatchphrasesButton: WKInterfaceButton!
+    @IBOutlet var catchphraseSaveIndicator: WKInterfaceLabel!
+    @IBOutlet var catchphraseLabel: WKInterfaceLabel!
+    
+    
+    @IBAction func saveCatchphraseAction() {
+    
+    }
+    
+    
+    @IBAction func nextCatchphraseAction() {
+        
+        
+    }
+
+    @IBAction func showCatchphrasesAction() {
+    
+    }
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

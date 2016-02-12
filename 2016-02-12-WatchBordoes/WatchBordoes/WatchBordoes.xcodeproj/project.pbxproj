@@ -19,6 +19,7 @@
 		A45271321C6E3FB7001AC8EA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271311C6E3FB7001AC8EA /* InterfaceController.swift */; };
 		A45271341C6E3FB7001AC8EA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271331C6E3FB7001AC8EA /* ExtensionDelegate.swift */; };
 		A45271361C6E3FB7001AC8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45271351C6E3FB7001AC8EA /* Assets.xcassets */; };
+		A45271461C6E40BA001AC8EA /* Catchphrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271451C6E40BA001AC8EA /* Catchphrases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		A45271331C6E3FB7001AC8EA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A45271351C6E3FB7001AC8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45271371C6E3FB7001AC8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A45271451C6E40BA001AC8EA /* Catchphrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catchphrases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			children = (
 				A45271311C6E3FB7001AC8EA /* InterfaceController.swift */,
 				A45271331C6E3FB7001AC8EA /* ExtensionDelegate.swift */,
+				A45271451C6E40BA001AC8EA /* Catchphrases.swift */,
 				A45271351C6E3FB7001AC8EA /* Assets.xcassets */,
 				A45271371C6E3FB7001AC8EA /* Info.plist */,
 			);
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45271461C6E40BA001AC8EA /* Catchphrases.swift in Sources */,
 				A45271341C6E3FB7001AC8EA /* ExtensionDelegate.swift in Sources */,
 				A45271321C6E3FB7001AC8EA /* InterfaceController.swift in Sources */,
 			);
