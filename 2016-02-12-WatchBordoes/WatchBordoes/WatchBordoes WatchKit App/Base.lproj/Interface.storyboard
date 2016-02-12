@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchBordoes_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="center" text="Catchphrases" textAlignment="center" id="8Vz-qn-jxv"/>
+                        <label width="1" alignment="center" text="Catchphrases" textAlignment="center" numberOfLines="0" id="8Vz-qn-jxv"/>
                         <group width="1" alignment="left" id="MPS-JW-DLH">
                             <items>
                                 <button alignment="left" title="Passar" id="L4O-sJ-woG">
@@ -27,21 +27,43 @@
                                 </button>
                             </items>
                         </group>
-                        <label alignment="center" text="Saved" id="dk7-RX-Ch6"/>
+                        <label alignment="center" alpha="0.0" text="Saved" id="dk7-RX-Ch6"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Mostrar Bordões" id="Bb4-II-Dso">
                             <color key="backgroundColor" red="0.26250861695500421" green="0.81332131410256414" blue="0.056039378752628079" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="showCatchphrasesAction" destination="AgC-eL-Hgc" id="8bD-m0-INf"/>
+                                <action selector="showSavedCatchphrasesAction" destination="AgC-eL-Hgc" id="hdz-wY-WeD"/>
                             </connections>
                         </button>
+                        <table alignment="center" verticalAlignment="bottom" spacing="2" id="lCw-CB-EU9">
+                            <items>
+                                <tableRow identifier="CatchphraseTableRowController" id="uTI-4c-fKD" customClass="CatchphraseTableRowController" customModule="WatchBordoes_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" radius="1" id="v9w-KZ-kVb">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="💭" id="a0K-3p-xp9"/>
+                                            <label width="80" alignment="center" verticalAlignment="center" text="saved phrase" numberOfLines="0" id="PeU-ze-PAD"/>
+                                            <label alignment="right" verticalAlignment="center" text="💭" id="Tf7-fU-bQX"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="saveCatchphraseLabel" destination="PeU-ze-PAD" id="qyZ-nn-niE"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </table>
                     </items>
                     <connections>
                         <outlet property="catchphraseLabel" destination="8Vz-qn-jxv" id="16z-30-tyv"/>
                         <outlet property="catchphraseSaveIndicator" destination="dk7-RX-Ch6" id="RMF-46-vJU"/>
-                        <outlet property="showCatchphrasesButton" destination="Bb4-II-Dso" id="D5Y-7r-8jf"/>
+                        <outlet property="nextCatchphraseButton" destination="L4O-sJ-woG" id="WEG-L7-efS"/>
+                        <outlet property="saveCatchphraseButton" destination="00a-Wr-jPd" id="vFh-WC-FrN"/>
+                        <outlet property="savedCatchphrasesTable" destination="lCw-CB-EU9" id="6yE-H9-ywh"/>
+                        <outlet property="showSavedCatchphrasesButton" destination="Bb4-II-Dso" id="nsW-YE-eKc"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="408" y="642"/>
         </scene>
     </scenes>
 </document>

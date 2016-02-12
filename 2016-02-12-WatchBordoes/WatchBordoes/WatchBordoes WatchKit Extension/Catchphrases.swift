@@ -10,7 +10,7 @@ import UIKit
 
 class Catchphrases: NSObject {
     
-    static let listOfPhrases = ["Cool, cool, cool.",
+    static var listOfPhrases = ["Cool, cool, cool.",
         "It’s a shame you can only die once.",
         "Just because you shot Jesse James, don’t make you Jesse James.",
         "How you doin?",
@@ -56,7 +56,8 @@ class Catchphrases: NSObject {
         "Show me the Money.",
         "Woot!",
         "Theres always money in the Banana Stand."]
-
+    
+    
 }
 extension Int {
     func random() -> Int {

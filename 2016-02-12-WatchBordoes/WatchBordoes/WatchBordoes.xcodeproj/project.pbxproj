@@ -20,6 +20,7 @@
 		A45271341C6E3FB7001AC8EA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271331C6E3FB7001AC8EA /* ExtensionDelegate.swift */; };
 		A45271361C6E3FB7001AC8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45271351C6E3FB7001AC8EA /* Assets.xcassets */; };
 		A45271461C6E40BA001AC8EA /* Catchphrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271451C6E40BA001AC8EA /* Catchphrases.swift */; };
+		A452714A1C6E5304001AC8EA /* CatchphraseTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271491C6E5304001AC8EA /* CatchphraseTableRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		A45271351C6E3FB7001AC8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45271371C6E3FB7001AC8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45271451C6E40BA001AC8EA /* Catchphrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catchphrases.swift; sourceTree = "<group>"; };
+		A45271491C6E5304001AC8EA /* CatchphraseTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchphraseTableRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,13 +150,30 @@
 		A45271301C6E3FB7001AC8EA /* WatchBordoes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A45271311C6E3FB7001AC8EA /* InterfaceController.swift */,
+				A45271481C6E52CE001AC8EA /* Controller */,
+				A45271471C6E52C8001AC8EA /* Model */,
 				A45271331C6E3FB7001AC8EA /* ExtensionDelegate.swift */,
-				A45271451C6E40BA001AC8EA /* Catchphrases.swift */,
 				A45271351C6E3FB7001AC8EA /* Assets.xcassets */,
 				A45271371C6E3FB7001AC8EA /* Info.plist */,
 			);
 			path = "WatchBordoes WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A45271471C6E52C8001AC8EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A45271451C6E40BA001AC8EA /* Catchphrases.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A45271481C6E52CE001AC8EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A45271311C6E3FB7001AC8EA /* InterfaceController.swift */,
+				A45271491C6E5304001AC8EA /* CatchphraseTableRowController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A452714A1C6E5304001AC8EA /* CatchphraseTableRowController.swift in Sources */,
 				A45271461C6E40BA001AC8EA /* Catchphrases.swift in Sources */,
 				A45271341C6E3FB7001AC8EA /* ExtensionDelegate.swift in Sources */,
 				A45271321C6E3FB7001AC8EA /* InterfaceController.swift in Sources */,
