@@ -21,6 +21,14 @@
 		A45271361C6E3FB7001AC8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45271351C6E3FB7001AC8EA /* Assets.xcassets */; };
 		A45271461C6E40BA001AC8EA /* Catchphrases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271451C6E40BA001AC8EA /* Catchphrases.swift */; };
 		A452714A1C6E5304001AC8EA /* CatchphraseTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271491C6E5304001AC8EA /* CatchphraseTableRowController.swift */; };
+		A45271811C6E5EC5001AC8EA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A452717F1C6E5EC5001AC8EA /* Model.xcdatamodeld */; };
+		A45271821C6E5EC5001AC8EA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A452717F1C6E5EC5001AC8EA /* Model.xcdatamodeld */; };
+		A45271851C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271831C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift */; };
+		A45271861C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271831C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift */; };
+		A45271871C6E5EE0001AC8EA /* Catchphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271841C6E5EE0001AC8EA /* Catchphrase.swift */; };
+		A45271881C6E5EE0001AC8EA /* Catchphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45271841C6E5EE0001AC8EA /* Catchphrase.swift */; };
+		A452718D1C6E6402001AC8EA /* CoredataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452718C1C6E6402001AC8EA /* CoredataContext.swift */; };
+		A452718E1C6E6402001AC8EA /* CoredataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452718C1C6E6402001AC8EA /* CoredataContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +92,10 @@
 		A45271371C6E3FB7001AC8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45271451C6E40BA001AC8EA /* Catchphrases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catchphrases.swift; sourceTree = "<group>"; };
 		A45271491C6E5304001AC8EA /* CatchphraseTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchphraseTableRowController.swift; sourceTree = "<group>"; };
+		A45271801C6E5EC5001AC8EA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A45271831C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Catchphrase+CoreDataProperties.swift"; path = "../WatchBordoes/Catchphrase+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A45271841C6E5EE0001AC8EA /* Catchphrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Catchphrase.swift; path = ../WatchBordoes/Catchphrase.swift; sourceTree = "<group>"; };
+		A452718C1C6E6402001AC8EA /* CoredataContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoredataContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +174,11 @@
 		A45271471C6E52C8001AC8EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A452718C1C6E6402001AC8EA /* CoredataContext.swift */,
+				A45271831C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift */,
+				A45271841C6E5EE0001AC8EA /* Catchphrase.swift */,
 				A45271451C6E40BA001AC8EA /* Catchphrases.swift */,
+				A452717F1C6E5EC5001AC8EA /* Model.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -308,8 +324,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A45271851C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift in Sources */,
 				A45271111C6E3FB6001AC8EA /* ViewController.swift in Sources */,
+				A452718D1C6E6402001AC8EA /* CoredataContext.swift in Sources */,
+				A45271871C6E5EE0001AC8EA /* Catchphrase.swift in Sources */,
 				A452710F1C6E3FB6001AC8EA /* AppDelegate.swift in Sources */,
+				A45271811C6E5EC5001AC8EA /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +337,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A452718E1C6E6402001AC8EA /* CoredataContext.swift in Sources */,
 				A452714A1C6E5304001AC8EA /* CatchphraseTableRowController.swift in Sources */,
 				A45271461C6E40BA001AC8EA /* Catchphrases.swift in Sources */,
+				A45271861C6E5EE0001AC8EA /* Catchphrase+CoreDataProperties.swift in Sources */,
+				A45271881C6E5EE0001AC8EA /* Catchphrase.swift in Sources */,
+				A45271821C6E5EC5001AC8EA /* Model.xcdatamodeld in Sources */,
 				A45271341C6E3FB7001AC8EA /* ExtensionDelegate.swift in Sources */,
 				A45271321C6E3FB7001AC8EA /* InterfaceController.swift in Sources */,
 			);
@@ -551,6 +575,7 @@
 				A452713C1C6E3FB7001AC8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A452713E1C6E3FB7001AC8EA /* Build configuration list for PBXNativeTarget "WatchBordoes WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +584,7 @@
 				A45271401C6E3FB7001AC8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A45271421C6E3FB7001AC8EA /* Build configuration list for PBXNativeTarget "WatchBordoes" */ = {
 			isa = XCConfigurationList;
@@ -567,8 +593,22 @@
 				A45271441C6E3FB7001AC8EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A452717F1C6E5EC5001AC8EA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A45271801C6E5EC5001AC8EA /* Model.xcdatamodel */,
+			);
+			currentVersion = A45271801C6E5EC5001AC8EA /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A45271031C6E3FB6001AC8EA /* Project object */;
 }

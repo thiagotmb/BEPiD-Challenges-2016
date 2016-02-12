@@ -12,9 +12,13 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
-    var unusedCatchphrases = Catchphrases.listOfPhrases
+    var unusedCatchphrases = Catchphrases.listOfPhrases.filter() {
+        return !Catchphrase.savedCatchphrases().contains($0)
+    }
+    
+    
     var currentCatchphraseIndex : Int = 0
-    var savedCatchphrases : [String] = []
+    //    var savedCatchphrases : [String] = []
     
     var isShowingSavedCatchphrases = false
     
@@ -67,7 +71,7 @@ class InterfaceController: WKInterfaceController {
         
         let currnetCatchphrase = unusedCatchphrases[currentCatchphraseIndex]
         
-        savedCatchphrases.append(currnetCatchphrase)
+        Catchphrase.saveCatchphrase(currnetCatchphrase)
         unusedCatchphrases.removeAtIndex(currentCatchphraseIndex)
         
         self.catchphraseSaveIndicator.setAlpha(1)
@@ -88,12 +92,12 @@ class InterfaceController: WKInterfaceController {
             clearTableData()
             isShowingSavedCatchphrases = false
             showSavedCatchphrasesButton.setTitle("Mostrar bordões")
-
+            
         }else{
-            loadTableData(savedCatchphrases.count)
+            loadTableData(Catchphrase.savedCatchphrases().count)
             isShowingSavedCatchphrases = true
             showSavedCatchphrasesButton.setTitle("Esconder bordões")
-
+            
             
         }
         
@@ -101,10 +105,11 @@ class InterfaceController: WKInterfaceController {
     
     private func loadTableData(numberOfRowsToShow: Int){
         
+        
         savedCatchphrasesTable.setNumberOfRows(numberOfRowsToShow, withRowType: "CatchphraseTableRowController")
         
         if numberOfRowsToShow > 0 {
-            for (index, catchphraseContent) in savedCatchphrases.enumerate(){
+            for (index, catchphraseContent) in Catchphrase.savedCatchphrases().enumerate(){
                 
                 let row = savedCatchphrasesTable.rowControllerAtIndex(index) as! CatchphraseTableRowController
                 
