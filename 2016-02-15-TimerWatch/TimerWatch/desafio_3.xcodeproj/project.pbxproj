@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A41B7EB31C727A1F0086C953 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B7EB21C727A1F0086C953 /* Events.swift */; };
+		AF5145101C723FBD00953131 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51450F1C723FBD00953131 /* AppDelegate.swift */; };
+		AF5145121C723FBD00953131 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5145111C723FBD00953131 /* ViewController.swift */; };
+		AF5145151C723FBD00953131 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5145131C723FBD00953131 /* Main.storyboard */; };
+		AF5145171C723FBD00953131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5145161C723FBD00953131 /* Assets.xcassets */; };
+		AF51451A1C723FBD00953131 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5145181C723FBD00953131 /* LaunchScreen.storyboard */; };
+		AF51451F1C723FBD00953131 /* desafio_3 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AF51451E1C723FBD00953131 /* desafio_3 WatchKit App.app */; };
+		AF5145271C723FBD00953131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5145261C723FBD00953131 /* Assets.xcassets */; };
+		AF51452E1C723FBE00953131 /* desafio_3 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AF51452D1C723FBE00953131 /* desafio_3 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AF5145331C723FBE00953131 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5145321C723FBE00953131 /* InterfaceController.swift */; };
+		AF5145351C723FBE00953131 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5145341C723FBE00953131 /* ExtensionDelegate.swift */; };
+		AF5145371C723FBE00953131 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5145361C723FBE00953131 /* Assets.xcassets */; };
+		AF5145481C72406000953131 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145461C72406000953131 /* Realm.framework */; };
+		AF5145491C72406000953131 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145461C72406000953131 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF51454A1C72406000953131 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145471C72406000953131 /* RealmSwift.framework */; };
+		AF51454B1C72406000953131 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145471C72406000953131 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF5145501C7240BE00953131 /* CatchyPhrasesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51454D1C7240BE00953131 /* CatchyPhrasesDAO.swift */; };
+		AF5145521C7240BE00953131 /* PhrasesRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51454F1C7240BE00953131 /* PhrasesRowController.swift */; };
+		AF5145551C72413F00953131 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145531C72413F00953131 /* Realm.framework */; };
+		AF5145561C72413F00953131 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145531C72413F00953131 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF5145571C72413F00953131 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145541C72413F00953131 /* RealmSwift.framework */; };
+		AF5145581C72413F00953131 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF5145541C72413F00953131 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF51455B1C72416C00953131 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51455A1C72416C00953131 /* Event.swift */; };
+		AF51455D1C72445200953131 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF51455C1C72445200953131 /* Interface.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF5145201C723FBD00953131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF5145041C723FBD00953131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF51451D1C723FBD00953131;
+			remoteInfo = "desafio_3 WatchKit App";
+		};
+		AF51452F1C723FBE00953131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF5145041C723FBD00953131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF51452C1C723FBE00953131;
+			remoteInfo = "desafio_3 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AF51453E1C723FBE00953131 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AF51452E1C723FBE00953131 /* desafio_3 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5145421C723FBE00953131 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AF51451F1C723FBD00953131 /* desafio_3 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF51454C1C72406000953131 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF51454B1C72406000953131 /* RealmSwift.framework in Embed Frameworks */,
+				AF5145491C72406000953131 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5145591C72414000953131 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AF5145581C72413F00953131 /* RealmSwift.framework in Embed Frameworks */,
+				AF5145561C72413F00953131 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A41B7EB21C727A1F0086C953 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		AF51450C1C723FBD00953131 /* desafio_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafio_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF51450F1C723FBD00953131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF5145111C723FBD00953131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF5145141C723FBD00953131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF5145161C723FBD00953131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF5145191C723FBD00953131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF51451B1C723FBD00953131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF51451E1C723FBD00953131 /* desafio_3 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio_3 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5145261C723FBD00953131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF5145281C723FBD00953131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF51452D1C723FBE00953131 /* desafio_3 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "desafio_3 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5145321C723FBE00953131 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AF5145341C723FBE00953131 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AF5145361C723FBE00953131 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF5145381C723FBE00953131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF5145461C72406000953131 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
+		AF5145471C72406000953131 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
+		AF51454D1C7240BE00953131 /* CatchyPhrasesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchyPhrasesDAO.swift; sourceTree = "<group>"; };
+		AF51454F1C7240BE00953131 /* PhrasesRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhrasesRowController.swift; sourceTree = "<group>"; };
+		AF5145531C72413F00953131 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
+		AF5145541C72413F00953131 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
+		AF51455A1C72416C00953131 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AF51455C1C72445200953131 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF5145091C723FBD00953131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF51454A1C72406000953131 /* RealmSwift.framework in Frameworks */,
+				AF5145481C72406000953131 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF51452A1C723FBE00953131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5145571C72413F00953131 /* RealmSwift.framework in Frameworks */,
+				AF5145551C72413F00953131 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF5145031C723FBD00953131 = {
+			isa = PBXGroup;
+			children = (
+				AF5145531C72413F00953131 /* Realm.framework */,
+				AF5145541C72413F00953131 /* RealmSwift.framework */,
+				AF5145461C72406000953131 /* Realm.framework */,
+				AF5145471C72406000953131 /* RealmSwift.framework */,
+				AF51450E1C723FBD00953131 /* desafio_3 */,
+				AF5145221C723FBD00953131 /* desafio_3 WatchKit App */,
+				AF5145311C723FBE00953131 /* desafio_3 WatchKit Extension */,
+				AF51450D1C723FBD00953131 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF51450D1C723FBD00953131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF51450C1C723FBD00953131 /* desafio_3.app */,
+				AF51451E1C723FBD00953131 /* desafio_3 WatchKit App.app */,
+				AF51452D1C723FBE00953131 /* desafio_3 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF51450E1C723FBD00953131 /* desafio_3 */ = {
+			isa = PBXGroup;
+			children = (
+				AF51450F1C723FBD00953131 /* AppDelegate.swift */,
+				AF5145111C723FBD00953131 /* ViewController.swift */,
+				AF5145131C723FBD00953131 /* Main.storyboard */,
+				AF5145161C723FBD00953131 /* Assets.xcassets */,
+				AF5145181C723FBD00953131 /* LaunchScreen.storyboard */,
+				AF51451B1C723FBD00953131 /* Info.plist */,
+			);
+			path = desafio_3;
+			sourceTree = "<group>";
+		};
+		AF5145221C723FBD00953131 /* desafio_3 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AF51455C1C72445200953131 /* Interface.storyboard */,
+				AF5145261C723FBD00953131 /* Assets.xcassets */,
+				AF5145281C723FBD00953131 /* Info.plist */,
+			);
+			path = "desafio_3 WatchKit App";
+			sourceTree = "<group>";
+		};
+		AF5145311C723FBE00953131 /* desafio_3 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AF51454D1C7240BE00953131 /* CatchyPhrasesDAO.swift */,
+				AF51454F1C7240BE00953131 /* PhrasesRowController.swift */,
+				AF5145321C723FBE00953131 /* InterfaceController.swift */,
+				AF5145341C723FBE00953131 /* ExtensionDelegate.swift */,
+				AF5145361C723FBE00953131 /* Assets.xcassets */,
+				AF5145381C723FBE00953131 /* Info.plist */,
+				AF51455A1C72416C00953131 /* Event.swift */,
+				A41B7EB21C727A1F0086C953 /* Events.swift */,
+			);
+			path = "desafio_3 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF51450B1C723FBD00953131 /* desafio_3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5145431C723FBE00953131 /* Build configuration list for PBXNativeTarget "desafio_3" */;
+			buildPhases = (
+				AF5145081C723FBD00953131 /* Sources */,
+				AF5145091C723FBD00953131 /* Frameworks */,
+				AF51450A1C723FBD00953131 /* Resources */,
+				AF5145421C723FBE00953131 /* Embed Watch Content */,
+				AF51454C1C72406000953131 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5145211C723FBD00953131 /* PBXTargetDependency */,
+			);
+			name = desafio_3;
+			productName = desafio_3;
+			productReference = AF51450C1C723FBD00953131 /* desafio_3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF51451D1C723FBD00953131 /* desafio_3 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF51453F1C723FBE00953131 /* Build configuration list for PBXNativeTarget "desafio_3 WatchKit App" */;
+			buildPhases = (
+				AF51451C1C723FBD00953131 /* Resources */,
+				AF51453E1C723FBE00953131 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5145301C723FBE00953131 /* PBXTargetDependency */,
+			);
+			name = "desafio_3 WatchKit App";
+			productName = "desafio_3 WatchKit App";
+			productReference = AF51451E1C723FBD00953131 /* desafio_3 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AF51452C1C723FBE00953131 /* desafio_3 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF51453B1C723FBE00953131 /* Build configuration list for PBXNativeTarget "desafio_3 WatchKit Extension" */;
+			buildPhases = (
+				AF5145291C723FBE00953131 /* Sources */,
+				AF51452A1C723FBE00953131 /* Frameworks */,
+				AF51452B1C723FBE00953131 /* Resources */,
+				AF5145591C72414000953131 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "desafio_3 WatchKit Extension";
+			productName = "desafio_3 WatchKit Extension";
+			productReference = AF51452D1C723FBE00953131 /* desafio_3 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF5145041C723FBD00953131 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Dennis Merli Rodrigues";
+				TargetAttributes = {
+					AF51450B1C723FBD00953131 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					AF51451D1C723FBD00953131 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					AF51452C1C723FBE00953131 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AF5145071C723FBD00953131 /* Build configuration list for PBXProject "desafio_3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF5145031C723FBD00953131;
+			productRefGroup = AF51450D1C723FBD00953131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF51450B1C723FBD00953131 /* desafio_3 */,
+				AF51451D1C723FBD00953131 /* desafio_3 WatchKit App */,
+				AF51452C1C723FBE00953131 /* desafio_3 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF51450A1C723FBD00953131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF51451A1C723FBD00953131 /* LaunchScreen.storyboard in Resources */,
+				AF5145171C723FBD00953131 /* Assets.xcassets in Resources */,
+				AF5145151C723FBD00953131 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF51451C1C723FBD00953131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF51455D1C72445200953131 /* Interface.storyboard in Resources */,
+				AF5145271C723FBD00953131 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF51452B1C723FBE00953131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5145371C723FBE00953131 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF5145081C723FBD00953131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5145121C723FBD00953131 /* ViewController.swift in Sources */,
+				AF5145101C723FBD00953131 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5145291C723FBE00953131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41B7EB31C727A1F0086C953 /* Events.swift in Sources */,
+				AF5145521C7240BE00953131 /* PhrasesRowController.swift in Sources */,
+				AF5145351C723FBE00953131 /* ExtensionDelegate.swift in Sources */,
+				AF5145501C7240BE00953131 /* CatchyPhrasesDAO.swift in Sources */,
+				AF5145331C723FBE00953131 /* InterfaceController.swift in Sources */,
+				AF51455B1C72416C00953131 /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF5145211C723FBD00953131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF51451D1C723FBD00953131 /* desafio_3 WatchKit App */;
+			targetProxy = AF5145201C723FBD00953131 /* PBXContainerItemProxy */;
+		};
+		AF5145301C723FBE00953131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF51452C1C723FBE00953131 /* desafio_3 WatchKit Extension */;
+			targetProxy = AF51452F1C723FBE00953131 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF5145131C723FBD00953131 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5145141C723FBD00953131 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF5145181C723FBD00953131 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5145191C723FBD00953131 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF5145391C723FBE00953131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF51453A1C723FBE00953131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF51453C1C723FBE00953131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "desafio_3 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neneds.desafio-3.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		AF51453D1C723FBE00953131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "desafio_3 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neneds.desafio-3.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		AF5145401C723FBE00953131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = desafio_3_WatchKit_Extension;
+				INFOPLIST_FILE = "desafio_3 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neneds.desafio-3.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		AF5145411C723FBE00953131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = desafio_3_WatchKit_Extension;
+				INFOPLIST_FILE = "desafio_3 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neneds.desafio-3.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		AF5145441C723FBE00953131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = desafio_3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neneds.desafio-3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF5145451C723FBE00953131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = desafio_3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.neneds.desafio-3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF5145071C723FBD00953131 /* Build configuration list for PBXProject "desafio_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5145391C723FBE00953131 /* Debug */,
+				AF51453A1C723FBE00953131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF51453B1C723FBE00953131 /* Build configuration list for PBXNativeTarget "desafio_3 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF51453C1C723FBE00953131 /* Debug */,
+				AF51453D1C723FBE00953131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF51453F1C723FBE00953131 /* Build configuration list for PBXNativeTarget "desafio_3 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5145401C723FBE00953131 /* Debug */,
+				AF5145411C723FBE00953131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5145431C723FBE00953131 /* Build configuration list for PBXNativeTarget "desafio_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5145441C723FBE00953131 /* Debug */,
+				AF5145451C723FBE00953131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF5145041C723FBD00953131 /* Project object */;
+}

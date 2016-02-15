@@ -10,7 +10,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchBordoes_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="center" text="Catchphrases" textAlignment="center" numberOfLines="0" id="8Vz-qn-jxv"/>
+                        <label width="1" alignment="center" text="BEPiD" textAlignment="center" minimumScaleFactor="0.40000000000000002" id="8Vz-qn-jxv">
+                            <color key="textColor" red="0.262508617" green="0.81332131409999997" blue="0.05603937875" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
                         <group width="1" alignment="left" id="MPS-JW-DLH">
                             <items>
                                 <button alignment="left" title="Passar" id="L4O-sJ-woG">

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="desafio_3_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <timer width="1" alignment="left" textAlignment="center" id="HuE-aJ-FUs"/>
+                        <label width="118.5" alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="hOB-4a-SNL"/>
+                        <dateLabel width="1" alignment="left" textAlignment="center" id="W4X-A9-Wj6">
+                            <dateFormatterStyle key="timeStyle" short="YES"/>
+                            <date key="previewedDate" timeIntervalSinceReferenceDate="418756140">
+                                <!--2014-04-09 17:09:00 +0000-->
+                            </date>
+                        </dateLabel>
+                        <group width="1" alignment="left" id="Cfg-DQ-fy7">
+                            <items>
+                                <button width="59" alignment="left" verticalAlignment="center" title="Passar" id="lbe-jo-8cJ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.83488000690607733" green="0.21990114329721219" blue="0.34127825183344446" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="passAction" destination="AgC-eL-Hgc" id="3l1-wR-2nB"/>
+                                    </connections>
+                                </button>
+                                <button width="65" alignment="right" verticalAlignment="center" title="Salvar" id="c1n-9U-WB5">
+                                    <color key="titleColor" red="0.29874947519466932" green="1" blue="0.41903904211146903" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.18570873618784534" green="0.18570873618784534" blue="0.18570873618784534" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                    <connections>
+                                        <action selector="saveAction" destination="AgC-eL-Hgc" id="0Vj-2Y-eNr"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <table alignment="center" verticalAlignment="bottom" id="wpK-6q-x9p">
+                            <items>
+                                <tableRow identifier="phTable" id="NGI-yW-oas" customClass="PhrasesRowController" customModule="desafio_3_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="tna-WB-Asp">
+                                        <items>
+                                            <label width="116.5" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="JyZ-TQ-XYW"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="JyZ-TQ-XYW" id="xqa-Si-t8e"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="eventDate" destination="W4X-A9-Wj6" id="d2z-Hz-pxW"/>
+                        <outlet property="eventTimer" destination="HuE-aJ-FUs" id="E73-qV-sj7"/>
+                        <outlet property="passButton" destination="lbe-jo-8cJ" id="cx8-cW-3T5"/>
+                        <outlet property="phraseLabel" destination="hOB-4a-SNL" id="tab-ql-66R"/>
+                        <outlet property="phrasesTable" destination="wpK-6q-x9p" id="rxQ-8H-L8i"/>
+                        <outlet property="saveButton" destination="c1n-9U-WB5" id="pvl-dJ-u1G"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="772" y="685.5"/>
+        </scene>
+    </scenes>
+</document>
