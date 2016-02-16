@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SimpleTable_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="UxY-3m-o5x">
+                            <items>
+                                <tableRow identifier="countryRow" id="Zpu-Lm-qnc" customClass="CountryRowController" customModule="SimpleTable_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="q6a-Bs-pny">
+                                        <items>
+                                            <imageView width="40" height="40" alignment="left" verticalAlignment="center" id="SIB-bd-M8k"/>
+                                            <group width="0.69999999999999996" alignment="left" layout="vertical" id="mpf-Db-bvS">
+                                                <items>
+                                                    <label width="1" alignment="center" text="countryName" textAlignment="center" numberOfLines="0" id="fjY-aV-Sol">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCallout"/>
+                                                    </label>
+                                                    <label width="1" alignment="center" text="countryCode" textAlignment="center" numberOfLines="0" id="UYu-Ug-Fwl"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="countryCodeLabel" destination="UYu-Ug-Fwl" id="00o-aX-pGe"/>
+                                        <outlet property="countryImage" destination="SIB-bd-M8k" id="jVU-ve-sPk"/>
+                                        <outlet property="countryNameLabel" destination="fjY-aV-Sol" id="81h-e0-bHt"/>
+                                        <segue destination="MG4-Gf-WJs" kind="push" identifier="showCountryDetail" id="idW-84-I1z"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="countriesTable" destination="UxY-3m-o5x" id="Mka-kp-z5G"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Country Detail Interface Controller-->
+        <scene sceneID="TCH-DZ-bag">
+            <objects>
+                <controller id="MG4-Gf-WJs" customClass="CountryDetailInterfaceController" customModule="SimpleTable_WatchKit_Extension">
+                    <items>
+                        <label height="19.5" alignment="center" text="Name" id="Ugo-yE-7Mr"/>
+                        <imageView width="150" height="150" alignment="center" id="Ewu-3u-9mV"/>
+                        <label alignment="center" text="Code" id="Mji-C0-pZJ">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="center" text="Longitude" id="h0p-YC-ELq">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="center" text="Latitude" id="gYi-lS-soc">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label alignment="center" text="Postal Code" id="pLG-WL-E08">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="countryCodeInterface" destination="Mji-C0-pZJ" id="HWC-rh-idc"/>
+                        <outlet property="countryImageInterface" destination="Ewu-3u-9mV" id="B8g-lK-uCO"/>
+                        <outlet property="countryLatitudeInterface" destination="gYi-lS-soc" id="5ma-lq-NJU"/>
+                        <outlet property="countryLongitudeInterface" destination="h0p-YC-ELq" id="fSs-H6-6qn"/>
+                        <outlet property="countryNameInterface" destination="Ugo-yE-7Mr" id="hcE-9S-gkD"/>
+                        <outlet property="countryPostalCodeInterface" destination="pLG-WL-E08" id="OW2-xW-tr6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="321"/>
+        </scene>
+    </scenes>
+</document>
