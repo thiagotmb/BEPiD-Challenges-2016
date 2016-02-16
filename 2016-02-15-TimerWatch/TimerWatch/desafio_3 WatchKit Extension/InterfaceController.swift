@@ -11,7 +11,7 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
     
     //Outlets
     
@@ -21,6 +21,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var phrasesTable: WKInterfaceTable!
     @IBOutlet var eventDate: WKInterfaceDate!
     @IBOutlet var eventTimer: WKInterfaceTimer!
+    @IBOutlet var labelDate: WKInterfaceLabel!
     
     var currentEvent : Event!
     
@@ -29,14 +30,14 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
     }
-
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         self.getPhrase()
         self.loadTable()
     }
-
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
@@ -54,7 +55,7 @@ class InterfaceController: WKInterfaceController {
                 as! PhrasesRowController
             row.rowLabel.setText(event.title)
             self.startATimer(event,label: row.rowLabel)
-
+            
         }
     }
     
@@ -83,26 +84,26 @@ class InterfaceController: WKInterfaceController {
         if let value : NSInteger = NSInteger.random(Events.listOfEvents.count)(){
             let eventTupla = Events.listOfEvents[value]
             self.currentEvent = Event(title: eventTupla.0, date: eventTupla.1)
-
+            
             self.phraseLabel.setText(currentEvent.title)
+            self.labelDate.setText(currentEvent.date)
         }
         
         
     }
- 
+    
     
     //MARK: Startar um timer
     
     func startATimer(event : Event, label: WKInterfaceLabel){
         
         
-        print(event.date)
         
         let dateFormat = NSDateFormatter()
         dateFormat.dateFormat = "HH:mm"
         dateFormat.timeZone = NSTimeZone(name: "America/Sao_Paulo")
         let date = dateFormat.dateFromString(event.date)
-
+        
         let calendar = NSCalendar(calendarIdentifier:NSCalendarIdentifierGregorian)
         let componentNow = calendar?.components([.Hour, .Minute], fromDate: NSDate())
         
@@ -114,23 +115,23 @@ class InterfaceController: WKInterfaceController {
         let timerInverval = Double( (hourInterval + minuteInterval) * 60)
         
         self.performSelector("highlightCurrentEvent:", withObject: label, afterDelay: timerInverval)
-
+        
         
     }
     
     
     //MARK: 
     func highlightCurrentEvent(label : WKInterfaceLabel?){
-//        let event  = timer.userInfo as! Event
+        //        let event  = timer.userInfo as! Event
         
         label?.setTextColor(UIColor.greenColor())
-//        if let index = CatchyPhrasesDAO.sharedInstance.getPhrasesArray().indexOf(event){
-//            print(index)
-//            
-//            let tableRow = phrasesTable.rowControllerAtIndex(index) as! PhrasesRowController
-//            tableRow.rowLabel.setTextColor(UIColor.greenColor())
-//        }
+        //        if let index = CatchyPhrasesDAO.sharedInstance.getPhrasesArray().indexOf(event){
+        //            print(index)
+        //            
+        //            let tableRow = phrasesTable.rowControllerAtIndex(index) as! PhrasesRowController
+        //            tableRow.rowLabel.setTextColor(UIColor.greenColor())
+        //        }
         
     }
-
+    
 }

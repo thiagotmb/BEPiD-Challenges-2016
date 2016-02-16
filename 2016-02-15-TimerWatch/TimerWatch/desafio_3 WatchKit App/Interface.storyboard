@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
@@ -12,12 +12,7 @@
                     <items>
                         <timer width="1" alignment="left" textAlignment="center" id="HuE-aJ-FUs"/>
                         <label width="118.5" alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="hOB-4a-SNL"/>
-                        <dateLabel width="1" alignment="left" textAlignment="center" id="W4X-A9-Wj6">
-                            <dateFormatterStyle key="timeStyle" short="YES"/>
-                            <date key="previewedDate" timeIntervalSinceReferenceDate="418756140">
-                                <!--2014-04-09 17:09:00 +0000-->
-                            </date>
-                        </dateLabel>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="wzN-mr-0wS"/>
                         <group width="1" alignment="left" id="Cfg-DQ-fy7">
                             <items>
                                 <button width="59" alignment="left" verticalAlignment="center" title="Passar" id="lbe-jo-8cJ">
@@ -54,8 +49,8 @@
                         </table>
                     </items>
                     <connections>
-                        <outlet property="eventDate" destination="W4X-A9-Wj6" id="d2z-Hz-pxW"/>
                         <outlet property="eventTimer" destination="HuE-aJ-FUs" id="E73-qV-sj7"/>
+                        <outlet property="labelDate" destination="wzN-mr-0wS" id="rxw-m4-RnQ"/>
                         <outlet property="passButton" destination="lbe-jo-8cJ" id="cx8-cW-3T5"/>
                         <outlet property="phraseLabel" destination="hOB-4a-SNL" id="tab-ql-66R"/>
                         <outlet property="phrasesTable" destination="wpK-6q-x9p" id="rxQ-8H-L8i"/>
@@ -63,7 +58,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="772" y="685.5"/>
+            <point key="canvasLocation" x="772" y="685"/>
         </scene>
     </scenes>
 </document>
