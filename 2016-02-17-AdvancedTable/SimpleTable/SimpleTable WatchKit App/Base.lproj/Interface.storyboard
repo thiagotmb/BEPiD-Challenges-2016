@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SimpleTable_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="UxY-3m-o5x">
+                            <items>
+                                <tableRow identifier="shopItemRow" id="Zpu-Lm-qnc" customClass="CountryRowController" customModule="SimpleTable_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="q6a-Bs-pny">
+                                        <items>
+                                            <imageView width="40" height="40" alignment="left" verticalAlignment="center" id="SIB-bd-M8k"/>
+                                            <group width="0.69999999999999996" alignment="left" layout="vertical" id="mpf-Db-bvS">
+                                                <items>
+                                                    <label width="1" alignment="center" text="shopItemName" textAlignment="center" numberOfLines="0" id="fjY-aV-Sol">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCallout"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="shopItemImage" destination="SIB-bd-M8k" id="jVU-ve-sPk"/>
+                                        <outlet property="shopItemNameLabel" destination="fjY-aV-Sol" id="81h-e0-bHt"/>
+                                        <segue destination="MG4-Gf-WJs" kind="push" identifier="showCountryDetail" id="idW-84-I1z"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="shopItemsTable" destination="UxY-3m-o5x" id="Mka-kp-z5G"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Country Detail Interface Controller-->
+        <scene sceneID="TCH-DZ-bag">
+            <objects>
+                <controller id="MG4-Gf-WJs" customClass="CountryDetailInterfaceController" customModule="SimpleTable_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Nq2-pR-Uft">
+                            <items>
+                                <imageView width="150" height="150" alignment="center" id="Ewu-3u-9mV"/>
+                            </items>
+                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" alignment="left" id="yux-pF-J3G">
+                            <items>
+                                <group width="90" alignment="left" id="heB-8Q-Mch">
+                                    <items>
+                                        <imageView width="25" height="25" alignment="left" verticalAlignment="center" id="Kby-2f-Y42"/>
+                                        <label height="19.5" alignment="center" verticalAlignment="center" text="Group" id="Ugo-yE-7Mr"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" verticalAlignment="center" text="Item" id="Mji-C0-pZJ">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="321"/>
+        </scene>
+    </scenes>
+</document>

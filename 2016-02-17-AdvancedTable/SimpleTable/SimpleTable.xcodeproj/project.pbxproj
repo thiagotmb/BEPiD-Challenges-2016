@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A45F36E41C750A5E00B46AD4 /* Array+Manage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F36E31C750A5E00B46AD4 /* Array+Manage.swift */; };
+		A47C4A0D1C73A7B4008EF006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A0C1C73A7B4008EF006 /* AppDelegate.swift */; };
+		A47C4A0F1C73A7B4008EF006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A0E1C73A7B4008EF006 /* ViewController.swift */; };
+		A47C4A121C73A7B4008EF006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47C4A101C73A7B4008EF006 /* Main.storyboard */; };
+		A47C4A141C73A7B4008EF006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47C4A131C73A7B4008EF006 /* Assets.xcassets */; };
+		A47C4A171C73A7B4008EF006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47C4A151C73A7B4008EF006 /* LaunchScreen.storyboard */; };
+		A47C4A1C1C73A7B4008EF006 /* SimpleTable WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A47C4A1B1C73A7B4008EF006 /* SimpleTable WatchKit App.app */; };
+		A47C4A221C73A7B4008EF006 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47C4A201C73A7B4008EF006 /* Interface.storyboard */; };
+		A47C4A241C73A7B4008EF006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47C4A231C73A7B4008EF006 /* Assets.xcassets */; };
+		A47C4A2B1C73A7B4008EF006 /* SimpleTable WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A47C4A2A1C73A7B4008EF006 /* SimpleTable WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A47C4A301C73A7B4008EF006 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A2F1C73A7B4008EF006 /* InterfaceController.swift */; };
+		A47C4A341C73A7B4008EF006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47C4A331C73A7B4008EF006 /* Assets.xcassets */; };
+		A47C4A461C73A910008EF006 /* ShopItemRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A451C73A910008EF006 /* ShopItemRowController.swift */; };
+		A47C4A4A1C73B100008EF006 /* ShopItemDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A491C73B100008EF006 /* ShopItemDetailInterfaceController.swift */; };
+		A47C4A4C1C73B3DB008EF006 /* ShopItem+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A4B1C73B3DB008EF006 /* ShopItem+Request.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A47C4A1D1C73A7B4008EF006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A47C4A011C73A7B3008EF006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47C4A1A1C73A7B4008EF006;
+			remoteInfo = "SimpleTable WatchKit App";
+		};
+		A47C4A2C1C73A7B4008EF006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A47C4A011C73A7B3008EF006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A47C4A291C73A7B4008EF006;
+			remoteInfo = "SimpleTable WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A47C4A3B1C73A7B4008EF006 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A47C4A2B1C73A7B4008EF006 /* SimpleTable WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47C4A3F1C73A7B4008EF006 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A47C4A1C1C73A7B4008EF006 /* SimpleTable WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A45F36E21C74FD4300B46AD4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		A45F36E31C750A5E00B46AD4 /* Array+Manage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Manage.swift"; sourceTree = "<group>"; };
+		A47C4A091C73A7B4008EF006 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47C4A0C1C73A7B4008EF006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A47C4A0E1C73A7B4008EF006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A47C4A111C73A7B4008EF006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A47C4A131C73A7B4008EF006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47C4A161C73A7B4008EF006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A47C4A181C73A7B4008EF006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47C4A1B1C73A7B4008EF006 /* SimpleTable WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleTable WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47C4A211C73A7B4008EF006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A47C4A231C73A7B4008EF006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47C4A251C73A7B4008EF006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47C4A2A1C73A7B4008EF006 /* SimpleTable WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleTable WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47C4A2F1C73A7B4008EF006 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A47C4A331C73A7B4008EF006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A47C4A351C73A7B4008EF006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47C4A451C73A910008EF006 /* ShopItemRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItemRowController.swift; sourceTree = "<group>"; };
+		A47C4A491C73B100008EF006 /* ShopItemDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItemDetailInterfaceController.swift; sourceTree = "<group>"; };
+		A47C4A4B1C73B3DB008EF006 /* ShopItem+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopItem+Request.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A47C4A061C73A7B3008EF006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47C4A271C73A7B4008EF006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A45F36E51C750A6500B46AD4 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				A45F36E31C750A5E00B46AD4 /* Array+Manage.swift */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
+		A47C4A001C73A7B3008EF006 = {
+			isa = PBXGroup;
+			children = (
+				A45F36E21C74FD4300B46AD4 /* MyPlayground.playground */,
+				A47C4A0B1C73A7B4008EF006 /* SimpleTable */,
+				A47C4A1F1C73A7B4008EF006 /* SimpleTable WatchKit App */,
+				A47C4A2E1C73A7B4008EF006 /* SimpleTable WatchKit Extension */,
+				A47C4A0A1C73A7B4008EF006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A47C4A0A1C73A7B4008EF006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A47C4A091C73A7B4008EF006 /* SimpleTable.app */,
+				A47C4A1B1C73A7B4008EF006 /* SimpleTable WatchKit App.app */,
+				A47C4A2A1C73A7B4008EF006 /* SimpleTable WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A47C4A0B1C73A7B4008EF006 /* SimpleTable */ = {
+			isa = PBXGroup;
+			children = (
+				A47C4A0C1C73A7B4008EF006 /* AppDelegate.swift */,
+				A47C4A0E1C73A7B4008EF006 /* ViewController.swift */,
+				A47C4A101C73A7B4008EF006 /* Main.storyboard */,
+				A47C4A131C73A7B4008EF006 /* Assets.xcassets */,
+				A47C4A151C73A7B4008EF006 /* LaunchScreen.storyboard */,
+				A47C4A181C73A7B4008EF006 /* Info.plist */,
+			);
+			path = SimpleTable;
+			sourceTree = "<group>";
+		};
+		A47C4A1F1C73A7B4008EF006 /* SimpleTable WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A47C4A201C73A7B4008EF006 /* Interface.storyboard */,
+				A47C4A231C73A7B4008EF006 /* Assets.xcassets */,
+				A47C4A251C73A7B4008EF006 /* Info.plist */,
+			);
+			path = "SimpleTable WatchKit App";
+			sourceTree = "<group>";
+		};
+		A47C4A2E1C73A7B4008EF006 /* SimpleTable WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A45F36E51C750A6500B46AD4 /* Group */,
+				A47C4A441C73A8FC008EF006 /* Model */,
+				A47C4A431C73A8EC008EF006 /* Controller */,
+				A47C4A331C73A7B4008EF006 /* Assets.xcassets */,
+				A47C4A351C73A7B4008EF006 /* Info.plist */,
+			);
+			path = "SimpleTable WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A47C4A431C73A8EC008EF006 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A47C4A2F1C73A7B4008EF006 /* InterfaceController.swift */,
+				A47C4A491C73B100008EF006 /* ShopItemDetailInterfaceController.swift */,
+				A47C4A451C73A910008EF006 /* ShopItemRowController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A47C4A441C73A8FC008EF006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A47C4A4B1C73B3DB008EF006 /* ShopItem+Request.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A47C4A081C73A7B3008EF006 /* SimpleTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47C4A401C73A7B4008EF006 /* Build configuration list for PBXNativeTarget "SimpleTable" */;
+			buildPhases = (
+				A47C4A051C73A7B3008EF006 /* Sources */,
+				A47C4A061C73A7B3008EF006 /* Frameworks */,
+				A47C4A071C73A7B3008EF006 /* Resources */,
+				A47C4A3F1C73A7B4008EF006 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47C4A1E1C73A7B4008EF006 /* PBXTargetDependency */,
+			);
+			name = SimpleTable;
+			productName = SimpleTable;
+			productReference = A47C4A091C73A7B4008EF006 /* SimpleTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A47C4A1A1C73A7B4008EF006 /* SimpleTable WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47C4A3C1C73A7B4008EF006 /* Build configuration list for PBXNativeTarget "SimpleTable WatchKit App" */;
+			buildPhases = (
+				A47C4A191C73A7B4008EF006 /* Resources */,
+				A47C4A3B1C73A7B4008EF006 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A47C4A2D1C73A7B4008EF006 /* PBXTargetDependency */,
+			);
+			name = "SimpleTable WatchKit App";
+			productName = "SimpleTable WatchKit App";
+			productReference = A47C4A1B1C73A7B4008EF006 /* SimpleTable WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A47C4A291C73A7B4008EF006 /* SimpleTable WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A47C4A381C73A7B4008EF006 /* Build configuration list for PBXNativeTarget "SimpleTable WatchKit Extension" */;
+			buildPhases = (
+				A47C4A261C73A7B4008EF006 /* Sources */,
+				A47C4A271C73A7B4008EF006 /* Frameworks */,
+				A47C4A281C73A7B4008EF006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleTable WatchKit Extension";
+			productName = "SimpleTable WatchKit Extension";
+			productReference = A47C4A2A1C73A7B4008EF006 /* SimpleTable WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A47C4A011C73A7B3008EF006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TMB;
+				TargetAttributes = {
+					A47C4A081C73A7B3008EF006 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A47C4A1A1C73A7B4008EF006 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A47C4A291C73A7B4008EF006 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A47C4A041C73A7B3008EF006 /* Build configuration list for PBXProject "SimpleTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A47C4A001C73A7B3008EF006;
+			productRefGroup = A47C4A0A1C73A7B4008EF006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A47C4A081C73A7B3008EF006 /* SimpleTable */,
+				A47C4A1A1C73A7B4008EF006 /* SimpleTable WatchKit App */,
+				A47C4A291C73A7B4008EF006 /* SimpleTable WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A47C4A071C73A7B3008EF006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47C4A171C73A7B4008EF006 /* LaunchScreen.storyboard in Resources */,
+				A47C4A141C73A7B4008EF006 /* Assets.xcassets in Resources */,
+				A47C4A121C73A7B4008EF006 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47C4A191C73A7B4008EF006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47C4A241C73A7B4008EF006 /* Assets.xcassets in Resources */,
+				A47C4A221C73A7B4008EF006 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47C4A281C73A7B4008EF006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47C4A341C73A7B4008EF006 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A47C4A051C73A7B3008EF006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A47C4A0F1C73A7B4008EF006 /* ViewController.swift in Sources */,
+				A47C4A0D1C73A7B4008EF006 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A47C4A261C73A7B4008EF006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A45F36E41C750A5E00B46AD4 /* Array+Manage.swift in Sources */,
+				A47C4A301C73A7B4008EF006 /* InterfaceController.swift in Sources */,
+				A47C4A4A1C73B100008EF006 /* ShopItemDetailInterfaceController.swift in Sources */,
+				A47C4A4C1C73B3DB008EF006 /* ShopItem+Request.swift in Sources */,
+				A47C4A461C73A910008EF006 /* ShopItemRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A47C4A1E1C73A7B4008EF006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A47C4A1A1C73A7B4008EF006 /* SimpleTable WatchKit App */;
+			targetProxy = A47C4A1D1C73A7B4008EF006 /* PBXContainerItemProxy */;
+		};
+		A47C4A2D1C73A7B4008EF006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A47C4A291C73A7B4008EF006 /* SimpleTable WatchKit Extension */;
+			targetProxy = A47C4A2C1C73A7B4008EF006 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A47C4A101C73A7B4008EF006 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47C4A111C73A7B4008EF006 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A47C4A151C73A7B4008EF006 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47C4A161C73A7B4008EF006 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A47C4A201C73A7B4008EF006 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A47C4A211C73A7B4008EF006 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A47C4A361C73A7B4008EF006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A47C4A371C73A7B4008EF006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A47C4A391C73A7B4008EF006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SimpleTable WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.SimpleTable.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A47C4A3A1C73A7B4008EF006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SimpleTable WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.SimpleTable.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A47C4A3D1C73A7B4008EF006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SimpleTable_WatchKit_Extension;
+				INFOPLIST_FILE = "SimpleTable WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.SimpleTable.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A47C4A3E1C73A7B4008EF006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = SimpleTable_WatchKit_Extension;
+				INFOPLIST_FILE = "SimpleTable WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.SimpleTable.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A47C4A411C73A7B4008EF006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.SimpleTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A47C4A421C73A7B4008EF006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.SimpleTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A47C4A041C73A7B3008EF006 /* Build configuration list for PBXProject "SimpleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47C4A361C73A7B4008EF006 /* Debug */,
+				A47C4A371C73A7B4008EF006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47C4A381C73A7B4008EF006 /* Build configuration list for PBXNativeTarget "SimpleTable WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47C4A391C73A7B4008EF006 /* Debug */,
+				A47C4A3A1C73A7B4008EF006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47C4A3C1C73A7B4008EF006 /* Build configuration list for PBXNativeTarget "SimpleTable WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47C4A3D1C73A7B4008EF006 /* Debug */,
+				A47C4A3E1C73A7B4008EF006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A47C4A401C73A7B4008EF006 /* Build configuration list for PBXNativeTarget "SimpleTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47C4A411C73A7B4008EF006 /* Debug */,
+				A47C4A421C73A7B4008EF006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A47C4A011C73A7B3008EF006 /* Project object */;
+}
