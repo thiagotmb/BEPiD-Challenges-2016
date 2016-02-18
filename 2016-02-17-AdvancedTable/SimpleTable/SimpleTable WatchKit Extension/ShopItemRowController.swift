@@ -13,13 +13,13 @@ class ShopItemRowController: NSObject {
     
     @IBOutlet var shopItemNameLabel: WKInterfaceLabel!
     
-    @IBOutlet var shopItemGroupLabel: WKInterfaceLabel!
-    
-    
+    var shopItem : ShopItem!
+    //    
+    //    
     func loadWithShopItem(shopItem : ShopItem){
         
-        self.shopItemNameLabel.setText(shopItem.shopItemName)
-        self.shopItemGroupLabel.setText(shopItem.shopItemGroup)
+        self.shopItem = shopItem
+        self.shopItemNameLabel.setText(shopItem.itemName)
     }
     
 }

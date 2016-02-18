@@ -12,19 +12,21 @@ import Foundation
 
 class ShopItemDetailInterfaceController: WKInterfaceController {
     
-    @IBOutlet var shopItemImageInterface: WKInterfaceImage!
-    @IBOutlet var shopItemNameInterface: WKInterfaceLabel!
-    @IBOutlet var shopItemGroupInterface: WKInterfaceLabel!
     
+    @IBOutlet var shopItemImage: WKInterfaceImage!
+    @IBOutlet var shopItemTitle: WKInterfaceLabel!
+    
+    @IBOutlet var shopGroupImage: WKInterfaceImage!
+    @IBOutlet var shopGroupTitle: WKInterfaceLabel!
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
+        //        
         if let currentShopItem = context as? ShopItem{
             
+            shopItemTitle.setText(currentShopItem.itemName)
+            shopGroupTitle.setText(currentShopItem.groupName)
             
-            shopItemNameInterface.setText("Nome: "+currentShopItem.shopItemName)
-            shopItemGroupInterface.setText("País: "+currentShopItem.shopItemGroup)
             
         }
         

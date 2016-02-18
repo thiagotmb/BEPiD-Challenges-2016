@@ -9,7 +9,7 @@
 import WatchKit
 
 let shopItemURL = "https://api.myjson.com/bins/2nqw7";
-class ShopItemRequest{
+extension ShopItem{
     
     
     private class func parseJSON(data: NSData) -> NSArray{
@@ -33,10 +33,10 @@ class ShopItemRequest{
     }
     
     
-    class func getShopItemsByGroups() -> Dictionary<String, Array<String>>{
+    class func getShopItemsByGroups() -> Dictionary<String, Array<ShopItem?>>{
         
         
-        var shopItemsParsedArray =  Dictionary<String, Array<String>>()
+        var shopItemsParsedArray =  Dictionary<String, Array<ShopItem?>>()
         
         if let shopItemsDictArray = getJSON() as? [NSDictionary]{
             
@@ -44,7 +44,9 @@ class ShopItemRequest{
                 
                 for groupType in groupTypes{
                     
-                    if let currentGroupArray = shopItemsDictArray.justObjectsWithDictKey(groupType) as? [String]{
+                    
+                    if let currentGroupArray = shopItemsDictArray.justObjectsWithDictKey(groupType) as? [ShopItem?]{
+                        
                         shopItemsParsedArray[groupType] = currentGroupArray
                         
                     }

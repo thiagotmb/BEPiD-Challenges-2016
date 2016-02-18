@@ -11,11 +11,14 @@ import Foundation
 extension Array where Element: NSDictionary{
     
     
-    func justObjectsWithDictKey(key : String) -> [String?]{
+    func justObjectsWithDictKey(group : String) -> [ShopItem?]{
         
-        let filteredArray = self.map{ (item : NSDictionary) -> String? in
-            if let itesm = item[key] as? String{
-                return itesm
+        let filteredArray = self.map{ (item : NSDictionary) -> ShopItem? in
+            if let itesm = item[group] as? String{
+                
+                let currentItem = ShopItem(itemName: itesm, groupName: group)
+                
+                return currentItem
             }
             return nil
         }
@@ -23,6 +26,7 @@ extension Array where Element: NSDictionary{
         return filteredArray
         
     }
+    
     
     
 }

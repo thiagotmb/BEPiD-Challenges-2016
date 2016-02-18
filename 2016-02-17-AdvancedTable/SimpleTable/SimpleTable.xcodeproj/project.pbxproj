@@ -22,6 +22,8 @@
 		A47C4A461C73A910008EF006 /* ShopItemRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A451C73A910008EF006 /* ShopItemRowController.swift */; };
 		A47C4A4A1C73B100008EF006 /* ShopItemDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A491C73B100008EF006 /* ShopItemDetailInterfaceController.swift */; };
 		A47C4A4C1C73B3DB008EF006 /* ShopItem+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47C4A4B1C73B3DB008EF006 /* ShopItem+Request.swift */; };
+		A4C86DC41C762D190080E533 /* ShopGroupRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C86DC31C762D190080E533 /* ShopGroupRowController.swift */; };
+		A4C86DC81C7634070080E533 /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C86DC71C7634070080E533 /* ShopItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		A47C4A451C73A910008EF006 /* ShopItemRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItemRowController.swift; sourceTree = "<group>"; };
 		A47C4A491C73B100008EF006 /* ShopItemDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItemDetailInterfaceController.swift; sourceTree = "<group>"; };
 		A47C4A4B1C73B3DB008EF006 /* ShopItem+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopItem+Request.swift"; sourceTree = "<group>"; };
+		A4C86DC31C762D190080E533 /* ShopGroupRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopGroupRowController.swift; sourceTree = "<group>"; };
+		A4C86DC71C7634070080E533 /* ShopItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 				A47C4A2F1C73A7B4008EF006 /* InterfaceController.swift */,
 				A47C4A491C73B100008EF006 /* ShopItemDetailInterfaceController.swift */,
 				A47C4A451C73A910008EF006 /* ShopItemRowController.swift */,
+				A4C86DC31C762D190080E533 /* ShopGroupRowController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				A47C4A4B1C73B3DB008EF006 /* ShopItem+Request.swift */,
+				A4C86DC71C7634070080E533 /* ShopItem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -330,7 +336,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C86DC41C762D190080E533 /* ShopGroupRowController.swift in Sources */,
 				A45F36E41C750A5E00B46AD4 /* Array+Manage.swift in Sources */,
+				A4C86DC81C7634070080E533 /* ShopItem.swift in Sources */,
 				A47C4A301C73A7B4008EF006 /* InterfaceController.swift in Sources */,
 				A47C4A4A1C73B100008EF006 /* ShopItemDetailInterfaceController.swift in Sources */,
 				A47C4A4C1C73B3DB008EF006 /* ShopItem+Request.swift in Sources */,
