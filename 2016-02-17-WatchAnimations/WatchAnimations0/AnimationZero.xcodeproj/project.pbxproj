@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4CD32421C764FE400855AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CD32411C764FE400855AAE /* AppDelegate.swift */; };
+		A4CD32441C764FE400855AAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CD32431C764FE400855AAE /* ViewController.swift */; };
+		A4CD32471C764FE400855AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CD32451C764FE400855AAE /* Main.storyboard */; };
+		A4CD32491C764FE400855AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CD32481C764FE400855AAE /* Assets.xcassets */; };
+		A4CD324C1C764FE400855AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CD324A1C764FE400855AAE /* LaunchScreen.storyboard */; };
+		A4CD32511C764FE400855AAE /* AnimationZero WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A4CD32501C764FE400855AAE /* AnimationZero WatchKit App.app */; };
+		A4CD32571C764FE400855AAE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CD32551C764FE400855AAE /* Interface.storyboard */; };
+		A4CD32591C764FE400855AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CD32581C764FE400855AAE /* Assets.xcassets */; };
+		A4CD32601C764FE400855AAE /* AnimationZero WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4CD325F1C764FE400855AAE /* AnimationZero WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4CD32651C764FE400855AAE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CD32641C764FE400855AAE /* InterfaceController.swift */; };
+		A4CD32671C764FE400855AAE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CD32661C764FE400855AAE /* ExtensionDelegate.swift */; };
+		A4CD32691C764FE400855AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CD32681C764FE400855AAE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4CD32521C764FE400855AAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CD32361C764FE400855AAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CD324F1C764FE400855AAE;
+			remoteInfo = "AnimationZero WatchKit App";
+		};
+		A4CD32611C764FE400855AAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CD32361C764FE400855AAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CD325E1C764FE400855AAE;
+			remoteInfo = "AnimationZero WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4CD32701C764FE400855AAE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4CD32601C764FE400855AAE /* AnimationZero WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CD32741C764FE400855AAE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A4CD32511C764FE400855AAE /* AnimationZero WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A4CD323E1C764FE400855AAE /* AnimationZero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationZero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CD32411C764FE400855AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4CD32431C764FE400855AAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4CD32461C764FE400855AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4CD32481C764FE400855AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4CD324B1C764FE400855AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4CD324D1C764FE400855AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CD32501C764FE400855AAE /* AnimationZero WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AnimationZero WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CD32561C764FE400855AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A4CD32581C764FE400855AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4CD325A1C764FE400855AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CD325F1C764FE400855AAE /* AnimationZero WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AnimationZero WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CD32641C764FE400855AAE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A4CD32661C764FE400855AAE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A4CD32681C764FE400855AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4CD326A1C764FE400855AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4CD323B1C764FE400855AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CD325C1C764FE400855AAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4CD32351C764FE400855AAE = {
+			isa = PBXGroup;
+			children = (
+				A4CD32401C764FE400855AAE /* AnimationZero */,
+				A4CD32541C764FE400855AAE /* AnimationZero WatchKit App */,
+				A4CD32631C764FE400855AAE /* AnimationZero WatchKit Extension */,
+				A4CD323F1C764FE400855AAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4CD323F1C764FE400855AAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD323E1C764FE400855AAE /* AnimationZero.app */,
+				A4CD32501C764FE400855AAE /* AnimationZero WatchKit App.app */,
+				A4CD325F1C764FE400855AAE /* AnimationZero WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4CD32401C764FE400855AAE /* AnimationZero */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD32411C764FE400855AAE /* AppDelegate.swift */,
+				A4CD32431C764FE400855AAE /* ViewController.swift */,
+				A4CD32451C764FE400855AAE /* Main.storyboard */,
+				A4CD32481C764FE400855AAE /* Assets.xcassets */,
+				A4CD324A1C764FE400855AAE /* LaunchScreen.storyboard */,
+				A4CD324D1C764FE400855AAE /* Info.plist */,
+			);
+			path = AnimationZero;
+			sourceTree = "<group>";
+		};
+		A4CD32541C764FE400855AAE /* AnimationZero WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD32551C764FE400855AAE /* Interface.storyboard */,
+				A4CD32581C764FE400855AAE /* Assets.xcassets */,
+				A4CD325A1C764FE400855AAE /* Info.plist */,
+			);
+			path = "AnimationZero WatchKit App";
+			sourceTree = "<group>";
+		};
+		A4CD32631C764FE400855AAE /* AnimationZero WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD32641C764FE400855AAE /* InterfaceController.swift */,
+				A4CD32661C764FE400855AAE /* ExtensionDelegate.swift */,
+				A4CD32681C764FE400855AAE /* Assets.xcassets */,
+				A4CD326A1C764FE400855AAE /* Info.plist */,
+			);
+			path = "AnimationZero WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4CD323D1C764FE400855AAE /* AnimationZero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CD32751C764FE400855AAE /* Build configuration list for PBXNativeTarget "AnimationZero" */;
+			buildPhases = (
+				A4CD323A1C764FE400855AAE /* Sources */,
+				A4CD323B1C764FE400855AAE /* Frameworks */,
+				A4CD323C1C764FE400855AAE /* Resources */,
+				A4CD32741C764FE400855AAE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4CD32531C764FE400855AAE /* PBXTargetDependency */,
+			);
+			name = AnimationZero;
+			productName = AnimationZero;
+			productReference = A4CD323E1C764FE400855AAE /* AnimationZero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4CD324F1C764FE400855AAE /* AnimationZero WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CD32711C764FE400855AAE /* Build configuration list for PBXNativeTarget "AnimationZero WatchKit App" */;
+			buildPhases = (
+				A4CD324E1C764FE400855AAE /* Resources */,
+				A4CD32701C764FE400855AAE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4CD32621C764FE400855AAE /* PBXTargetDependency */,
+			);
+			name = "AnimationZero WatchKit App";
+			productName = "AnimationZero WatchKit App";
+			productReference = A4CD32501C764FE400855AAE /* AnimationZero WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A4CD325E1C764FE400855AAE /* AnimationZero WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CD326D1C764FE400855AAE /* Build configuration list for PBXNativeTarget "AnimationZero WatchKit Extension" */;
+			buildPhases = (
+				A4CD325B1C764FE400855AAE /* Sources */,
+				A4CD325C1C764FE400855AAE /* Frameworks */,
+				A4CD325D1C764FE400855AAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AnimationZero WatchKit Extension";
+			productName = "AnimationZero WatchKit Extension";
+			productReference = A4CD325F1C764FE400855AAE /* AnimationZero WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4CD32361C764FE400855AAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TMB;
+				TargetAttributes = {
+					A4CD323D1C764FE400855AAE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A4CD324F1C764FE400855AAE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A4CD325E1C764FE400855AAE = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A4CD32391C764FE400855AAE /* Build configuration list for PBXProject "AnimationZero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4CD32351C764FE400855AAE;
+			productRefGroup = A4CD323F1C764FE400855AAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4CD323D1C764FE400855AAE /* AnimationZero */,
+				A4CD324F1C764FE400855AAE /* AnimationZero WatchKit App */,
+				A4CD325E1C764FE400855AAE /* AnimationZero WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4CD323C1C764FE400855AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CD324C1C764FE400855AAE /* LaunchScreen.storyboard in Resources */,
+				A4CD32491C764FE400855AAE /* Assets.xcassets in Resources */,
+				A4CD32471C764FE400855AAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CD324E1C764FE400855AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CD32591C764FE400855AAE /* Assets.xcassets in Resources */,
+				A4CD32571C764FE400855AAE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CD325D1C764FE400855AAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CD32691C764FE400855AAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4CD323A1C764FE400855AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CD32441C764FE400855AAE /* ViewController.swift in Sources */,
+				A4CD32421C764FE400855AAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CD325B1C764FE400855AAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CD32671C764FE400855AAE /* ExtensionDelegate.swift in Sources */,
+				A4CD32651C764FE400855AAE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4CD32531C764FE400855AAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4CD324F1C764FE400855AAE /* AnimationZero WatchKit App */;
+			targetProxy = A4CD32521C764FE400855AAE /* PBXContainerItemProxy */;
+		};
+		A4CD32621C764FE400855AAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4CD325E1C764FE400855AAE /* AnimationZero WatchKit Extension */;
+			targetProxy = A4CD32611C764FE400855AAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4CD32451C764FE400855AAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4CD32461C764FE400855AAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4CD324A1C764FE400855AAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4CD324B1C764FE400855AAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A4CD32551C764FE400855AAE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4CD32561C764FE400855AAE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4CD326B1C764FE400855AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4CD326C1C764FE400855AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4CD326E1C764FE400855AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AnimationZero WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.AnimationZero.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A4CD326F1C764FE400855AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "AnimationZero WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.AnimationZero.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A4CD32721C764FE400855AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = AnimationZero_WatchKit_Extension;
+				INFOPLIST_FILE = "AnimationZero WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.AnimationZero.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A4CD32731C764FE400855AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = AnimationZero_WatchKit_Extension;
+				INFOPLIST_FILE = "AnimationZero WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.AnimationZero.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A4CD32761C764FE400855AAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AnimationZero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.AnimationZero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4CD32771C764FE400855AAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AnimationZero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TMB.AnimationZero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4CD32391C764FE400855AAE /* Build configuration list for PBXProject "AnimationZero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CD326B1C764FE400855AAE /* Debug */,
+				A4CD326C1C764FE400855AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4CD326D1C764FE400855AAE /* Build configuration list for PBXNativeTarget "AnimationZero WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CD326E1C764FE400855AAE /* Debug */,
+				A4CD326F1C764FE400855AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4CD32711C764FE400855AAE /* Build configuration list for PBXNativeTarget "AnimationZero WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CD32721C764FE400855AAE /* Debug */,
+				A4CD32731C764FE400855AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4CD32751C764FE400855AAE /* Build configuration list for PBXNativeTarget "AnimationZero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CD32761C764FE400855AAE /* Debug */,
+				A4CD32771C764FE400855AAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4CD32361C764FE400855AAE /* Project object */;
+}
