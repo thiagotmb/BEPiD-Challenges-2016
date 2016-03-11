@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A42B116A1C91F91600E91092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B11691C91F91600E91092 /* AppDelegate.swift */; };
+		A42B116C1C91F91600E91092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B116B1C91F91600E91092 /* ViewController.swift */; };
+		A42B116F1C91F91600E91092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42B116D1C91F91600E91092 /* Main.storyboard */; };
+		A42B11711C91F91600E91092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B11701C91F91600E91092 /* Assets.xcassets */; };
+		A42B11741C91F91600E91092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42B11721C91F91600E91092 /* LaunchScreen.storyboard */; };
+		A42B11791C91F91600E91092 /* PickerChallenge WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A42B11781C91F91600E91092 /* PickerChallenge WatchKit App.app */; };
+		A42B117F1C91F91600E91092 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42B117D1C91F91600E91092 /* Interface.storyboard */; };
+		A42B11811C91F91600E91092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B11801C91F91600E91092 /* Assets.xcassets */; };
+		A42B11881C91F91600E91092 /* PickerChallenge WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A42B11871C91F91600E91092 /* PickerChallenge WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A42B118D1C91F91600E91092 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B118C1C91F91600E91092 /* InterfaceController.swift */; };
+		A42B118F1C91F91600E91092 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42B118E1C91F91600E91092 /* ExtensionDelegate.swift */; };
+		A42B11911C91F91600E91092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42B11901C91F91600E91092 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A42B117A1C91F91600E91092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42B115E1C91F91600E91092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42B11771C91F91600E91092;
+			remoteInfo = "PickerChallenge WatchKit App";
+		};
+		A42B11891C91F91600E91092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A42B115E1C91F91600E91092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A42B11861C91F91600E91092;
+			remoteInfo = "PickerChallenge WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A42B11981C91F91700E91092 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A42B11881C91F91600E91092 /* PickerChallenge WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B119C1C91F91700E91092 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A42B11791C91F91600E91092 /* PickerChallenge WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A42B11661C91F91600E91092 /* PickerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B11691C91F91600E91092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A42B116B1C91F91600E91092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A42B116E1C91F91600E91092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A42B11701C91F91600E91092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42B11731C91F91600E91092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A42B11751C91F91600E91092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42B11781C91F91600E91092 /* PickerChallenge WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PickerChallenge WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B117E1C91F91600E91092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A42B11801C91F91600E91092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42B11821C91F91600E91092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42B11871C91F91600E91092 /* PickerChallenge WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PickerChallenge WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B118C1C91F91600E91092 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A42B118E1C91F91600E91092 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A42B11901C91F91600E91092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42B11921C91F91600E91092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A42B11631C91F91600E91092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B11841C91F91600E91092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A42B115D1C91F91600E91092 = {
+			isa = PBXGroup;
+			children = (
+				A42B11681C91F91600E91092 /* PickerChallenge */,
+				A42B117C1C91F91600E91092 /* PickerChallenge WatchKit App */,
+				A42B118B1C91F91600E91092 /* PickerChallenge WatchKit Extension */,
+				A42B11671C91F91600E91092 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A42B11671C91F91600E91092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A42B11661C91F91600E91092 /* PickerChallenge.app */,
+				A42B11781C91F91600E91092 /* PickerChallenge WatchKit App.app */,
+				A42B11871C91F91600E91092 /* PickerChallenge WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A42B11681C91F91600E91092 /* PickerChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				A42B11691C91F91600E91092 /* AppDelegate.swift */,
+				A42B116B1C91F91600E91092 /* ViewController.swift */,
+				A42B116D1C91F91600E91092 /* Main.storyboard */,
+				A42B11701C91F91600E91092 /* Assets.xcassets */,
+				A42B11721C91F91600E91092 /* LaunchScreen.storyboard */,
+				A42B11751C91F91600E91092 /* Info.plist */,
+			);
+			path = PickerChallenge;
+			sourceTree = "<group>";
+		};
+		A42B117C1C91F91600E91092 /* PickerChallenge WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A42B117D1C91F91600E91092 /* Interface.storyboard */,
+				A42B11801C91F91600E91092 /* Assets.xcassets */,
+				A42B11821C91F91600E91092 /* Info.plist */,
+			);
+			path = "PickerChallenge WatchKit App";
+			sourceTree = "<group>";
+		};
+		A42B118B1C91F91600E91092 /* PickerChallenge WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A42B118C1C91F91600E91092 /* InterfaceController.swift */,
+				A42B118E1C91F91600E91092 /* ExtensionDelegate.swift */,
+				A42B11901C91F91600E91092 /* Assets.xcassets */,
+				A42B11921C91F91600E91092 /* Info.plist */,
+			);
+			path = "PickerChallenge WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A42B11651C91F91600E91092 /* PickerChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B119D1C91F91700E91092 /* Build configuration list for PBXNativeTarget "PickerChallenge" */;
+			buildPhases = (
+				A42B11621C91F91600E91092 /* Sources */,
+				A42B11631C91F91600E91092 /* Frameworks */,
+				A42B11641C91F91600E91092 /* Resources */,
+				A42B119C1C91F91700E91092 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42B117B1C91F91600E91092 /* PBXTargetDependency */,
+			);
+			name = PickerChallenge;
+			productName = PickerChallenge;
+			productReference = A42B11661C91F91600E91092 /* PickerChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A42B11771C91F91600E91092 /* PickerChallenge WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B11991C91F91700E91092 /* Build configuration list for PBXNativeTarget "PickerChallenge WatchKit App" */;
+			buildPhases = (
+				A42B11761C91F91600E91092 /* Resources */,
+				A42B11981C91F91700E91092 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A42B118A1C91F91600E91092 /* PBXTargetDependency */,
+			);
+			name = "PickerChallenge WatchKit App";
+			productName = "PickerChallenge WatchKit App";
+			productReference = A42B11781C91F91600E91092 /* PickerChallenge WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A42B11861C91F91600E91092 /* PickerChallenge WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42B11951C91F91700E91092 /* Build configuration list for PBXNativeTarget "PickerChallenge WatchKit Extension" */;
+			buildPhases = (
+				A42B11831C91F91600E91092 /* Sources */,
+				A42B11841C91F91600E91092 /* Frameworks */,
+				A42B11851C91F91600E91092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PickerChallenge WatchKit Extension";
+			productName = "PickerChallenge WatchKit Extension";
+			productReference = A42B11871C91F91600E91092 /* PickerChallenge WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A42B115E1C91F91600E91092 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TB;
+				TargetAttributes = {
+					A42B11651C91F91600E91092 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A42B11771C91F91600E91092 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A42B11861C91F91600E91092 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A42B11611C91F91600E91092 /* Build configuration list for PBXProject "PickerChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A42B115D1C91F91600E91092;
+			productRefGroup = A42B11671C91F91600E91092 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A42B11651C91F91600E91092 /* PickerChallenge */,
+				A42B11771C91F91600E91092 /* PickerChallenge WatchKit App */,
+				A42B11861C91F91600E91092 /* PickerChallenge WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A42B11641C91F91600E91092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B11741C91F91600E91092 /* LaunchScreen.storyboard in Resources */,
+				A42B11711C91F91600E91092 /* Assets.xcassets in Resources */,
+				A42B116F1C91F91600E91092 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B11761C91F91600E91092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B11811C91F91600E91092 /* Assets.xcassets in Resources */,
+				A42B117F1C91F91600E91092 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B11851C91F91600E91092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B11911C91F91600E91092 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A42B11621C91F91600E91092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B116C1C91F91600E91092 /* ViewController.swift in Sources */,
+				A42B116A1C91F91600E91092 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42B11831C91F91600E91092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42B118F1C91F91600E91092 /* ExtensionDelegate.swift in Sources */,
+				A42B118D1C91F91600E91092 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A42B117B1C91F91600E91092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42B11771C91F91600E91092 /* PickerChallenge WatchKit App */;
+			targetProxy = A42B117A1C91F91600E91092 /* PBXContainerItemProxy */;
+		};
+		A42B118A1C91F91600E91092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A42B11861C91F91600E91092 /* PickerChallenge WatchKit Extension */;
+			targetProxy = A42B11891C91F91600E91092 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A42B116D1C91F91600E91092 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42B116E1C91F91600E91092 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A42B11721C91F91600E91092 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42B11731C91F91600E91092 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A42B117D1C91F91600E91092 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42B117E1C91F91600E91092 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A42B11931C91F91700E91092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A42B11941C91F91700E91092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A42B11961C91F91700E91092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PickerChallenge WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TB.PickerChallenge.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A42B11971C91F91700E91092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PickerChallenge WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TB.PickerChallenge.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A42B119A1C91F91700E91092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PickerChallenge_WatchKit_Extension;
+				INFOPLIST_FILE = "PickerChallenge WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TB.PickerChallenge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A42B119B1C91F91700E91092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PickerChallenge_WatchKit_Extension;
+				INFOPLIST_FILE = "PickerChallenge WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = TB.PickerChallenge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A42B119E1C91F91700E91092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PickerChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TB.PickerChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A42B119F1C91F91700E91092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PickerChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TB.PickerChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A42B11611C91F91600E91092 /* Build configuration list for PBXProject "PickerChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B11931C91F91700E91092 /* Debug */,
+				A42B11941C91F91700E91092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42B11951C91F91700E91092 /* Build configuration list for PBXNativeTarget "PickerChallenge WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B11961C91F91700E91092 /* Debug */,
+				A42B11971C91F91700E91092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42B11991C91F91700E91092 /* Build configuration list for PBXNativeTarget "PickerChallenge WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B119A1C91F91700E91092 /* Debug */,
+				A42B119B1C91F91700E91092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A42B119D1C91F91700E91092 /* Build configuration list for PBXNativeTarget "PickerChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42B119E1C91F91700E91092 /* Debug */,
+				A42B119F1C91F91700E91092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A42B115E1C91F91600E91092 /* Project object */;
+}

@@ -31,7 +31,7 @@ class InterfaceController: WKInterfaceController {
         
         //        performSelector("bye", withObject: nil, afterDelay: 5)
         
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_MSEC)))
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(600 * Double(NSEC_PER_MSEC)))
         
         dispatch_after(delayTime, dispatch_get_main_queue()){ () -> Void in
             
@@ -45,7 +45,7 @@ class InterfaceController: WKInterfaceController {
     func bye(){
         animateWithDuration(3) { () -> Void in
             self.rodaImage.stopAnimating()
-            self.iGroup.setHeight(500)
+            self.iGroup.setHeight(200)
             
         }
         

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aqK-Yz-r0Z">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PickerExample_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <picker height="1" alignment="left" style="stack" focusStyle="sequence" id="CKT-8P-N4o"/>
+                    </items>
+                    <connections>
+                        <outlet property="fruitsPicker" destination="CKT-8P-N4o" id="q6p-ZO-6Ym"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="515-e2-Tat">
+            <objects>
+                <controller id="aqK-Yz-r0Z" customClass="InterfaceController" customModule="PickerExample_WatchKit_Extension">
+                    <items>
+                        <picker height="1" alignment="left" style="sequence" id="zf2-eV-yhu">
+                            <connections>
+                                <action selector="rangePickerChange:" destination="aqK-Yz-r0Z" id="GJf-vh-36N"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="rangePicker" destination="zf2-eV-yhu" id="lyn-wi-GuD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="410" y="541"/>
+        </scene>
+    </scenes>
+</document>

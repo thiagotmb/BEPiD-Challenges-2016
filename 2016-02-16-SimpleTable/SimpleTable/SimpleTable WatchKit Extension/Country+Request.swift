@@ -54,7 +54,7 @@ extension Country{
             
             let countryName = countryDict["placeName"] as! String
             let countryCode = countryDict["countryCode"] as! String
-            let countryImage = UIImage(named: "\(arc4random_uniform(5 - 1) + 1)")
+            let countryImage = UIImage(named: "\(arc4random_uniform(2 - 1) + 1)")
             let countryLatitude = (countryDict["lat"] as! NSNumber).stringValue
             let countryLongitude = (countryDict["lng"] as! NSNumber).stringValue
             let countryPostalCode = countryDict["postalcode"] as! String
