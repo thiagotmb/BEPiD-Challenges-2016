@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--CountryIC-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="CountryIC" customModule="_016_03_17_BackpackerChallenge_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="K1A-Qq-vnu">
+                            <items>
+                                <tableRow identifier="CountryRowType" id="ows-MA-rhn" customClass="CountryRowController" customModule="_016_03_17_BackpackerChallenge_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="UZg-Vl-jPK">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Pais 1" id="1Bn-oZ-2wX"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="cE4-OC-eec" kind="push" id="XZu-rZ-kcF"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="countryNameLabel" destination="1Bn-oZ-2wX" id="z0x-6A-0S6"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="countryTable" destination="K1A-Qq-vnu" id="08Z-Yp-nyK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="270" y="337"/>
+        </scene>
+        <!--Country DetaiIC-->
+        <scene sceneID="y0S-DG-mdr">
+            <objects>
+                <controller id="cE4-OC-eec" customClass="CountryDetaiIC" customModule="_016_03_17_BackpackerChallenge_WatchKit_Extension">
+                    <items>
+                        <map height="100" alignment="center" id="6F4-fO-hnL"/>
+                        <button width="1" alignment="left" title="Audios" id="GjA-Gz-bsd">
+                            <connections>
+                                <segue destination="W6P-lA-HiX" kind="push" id="tdC-MA-vQW"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Videos" id="e15-g2-rYI"/>
+                    </items>
+                    <connections>
+                        <outlet property="countryMap" destination="6F4-fO-hnL" id="ima-B9-QJo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="337"/>
+        </scene>
+        <!--Country AudsioIC-->
+        <scene sceneID="g6A-pl-eWt">
+            <objects>
+                <controller id="W6P-lA-HiX" customClass="CountryAudsioIC" customModule="_016_03_17_BackpackerChallenge_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Record new Audio" id="yuY-B5-vuo">
+                            <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="recordNewAudio" destination="W6P-lA-HiX" id="7E3-19-Mba"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="ek9-4e-Msg">
+                            <items>
+                                <tableRow identifier="CountryAudioRowType" id="0jZ-Bd-U8e" customClass="CountryAudioRowController" customModule="_016_03_17_BackpackerChallenge_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="g2d-be-uDp">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Audio 1" id="ZSB-8X-yps"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="audioNameLabel" destination="ZSB-8X-yps" id="X89-b8-mQI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="recordedAudiosTable" destination="ek9-4e-Msg" id="cQ9-e9-iNW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="696" y="337"/>
+        </scene>
+        <!--Country AudsioIC-->
+        <scene sceneID="3hF-p2-XhJ">
+            <objects>
+                <controller id="GxF-H9-KL0" customClass="CountryAudsioIC" customModule="_016_03_17_BackpackerChallenge_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Video 1" id="5JA-nF-zt5"/>
+                        <button width="1" alignment="left" title="Video 2" id="y4f-Xf-gKO"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="625"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="7zh-64-wKp">
+            <objects>
+                <controller id="pqu-0g-EYI">
+                    <items>
+                        <movie width="1" height="100" alignment="left" id="lab-Xz-Nri"/>
+                        <label alignment="center" verticalAlignment="center" text="Name of the video" id="Wx4-pu-kmH"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="846"/>
+        </scene>
+    </scenes>
+</document>
