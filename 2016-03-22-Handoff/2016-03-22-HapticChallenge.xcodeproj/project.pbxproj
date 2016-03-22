@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A44012211CA1C0F900DB5259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44012201CA1C0F900DB5259 /* AppDelegate.swift */; };
+		A44012231CA1C0F900DB5259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44012221CA1C0F900DB5259 /* ViewController.swift */; };
+		A44012261CA1C0F900DB5259 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44012241CA1C0F900DB5259 /* Main.storyboard */; };
+		A44012281CA1C0F900DB5259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44012271CA1C0F900DB5259 /* Assets.xcassets */; };
+		A440122B1CA1C0F900DB5259 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44012291CA1C0F900DB5259 /* LaunchScreen.storyboard */; };
+		A44012301CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A440122F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App.app */; };
+		A44012361CA1C0F900DB5259 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44012341CA1C0F900DB5259 /* Interface.storyboard */; };
+		A44012381CA1C0F900DB5259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44012371CA1C0F900DB5259 /* Assets.xcassets */; };
+		A440123F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A440123E1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A44012441CA1C0F900DB5259 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44012431CA1C0F900DB5259 /* InterfaceController.swift */; };
+		A44012461CA1C0F900DB5259 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44012451CA1C0F900DB5259 /* ExtensionDelegate.swift */; };
+		A44012481CA1C0F900DB5259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44012471CA1C0F900DB5259 /* Assets.xcassets */; };
+		A44012581CA1C12F00DB5259 /* HapticRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44012571CA1C12F00DB5259 /* HapticRowController.swift */; };
+		A495CCD51CA1DA70005BCBA5 /* HapticDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A495CCD41CA1DA70005BCBA5 /* HapticDetailInterfaceController.swift */; };
+		A495CCD71CA1DF2C005BCBA5 /* HapticDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A495CCD61CA1DF2C005BCBA5 /* HapticDetailViewController.swift */; };
+		A495CCD91CA1E4D2005BCBA5 /* HandoffHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A495CCD81CA1E4D2005BCBA5 /* HandoffHelper.swift */; };
+		A495CCDA1CA1E590005BCBA5 /* HandoffHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A495CCD81CA1E4D2005BCBA5 /* HandoffHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A44012311CA1C0F900DB5259 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A44012151CA1C0F900DB5259 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A440122E1CA1C0F900DB5259;
+			remoteInfo = "2016-03-22-HapticChallenge WatchKit App";
+		};
+		A44012401CA1C0F900DB5259 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A44012151CA1C0F900DB5259 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A440123D1CA1C0F900DB5259;
+			remoteInfo = "2016-03-22-HapticChallenge WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A440124F1CA1C0F900DB5259 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A440123F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A44012531CA1C0F900DB5259 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A44012301CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A440121D1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2016-03-22-HapticChallenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44012201CA1C0F900DB5259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A44012221CA1C0F900DB5259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A44012251CA1C0F900DB5259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A44012271CA1C0F900DB5259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A440122A1CA1C0F900DB5259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A440122C1CA1C0F900DB5259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A440122F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2016-03-22-HapticChallenge WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44012351CA1C0F900DB5259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A44012371CA1C0F900DB5259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A44012391CA1C0F900DB5259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A440123E1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "2016-03-22-HapticChallenge WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44012431CA1C0F900DB5259 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A44012451CA1C0F900DB5259 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A44012471CA1C0F900DB5259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A44012491CA1C0F900DB5259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A44012571CA1C12F00DB5259 /* HapticRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticRowController.swift; sourceTree = "<group>"; };
+		A495CCD41CA1DA70005BCBA5 /* HapticDetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticDetailInterfaceController.swift; sourceTree = "<group>"; };
+		A495CCD61CA1DF2C005BCBA5 /* HapticDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticDetailViewController.swift; sourceTree = "<group>"; };
+		A495CCD81CA1E4D2005BCBA5 /* HandoffHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandoffHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A440121A1CA1C0F900DB5259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A440123B1CA1C0F900DB5259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A44012141CA1C0F900DB5259 = {
+			isa = PBXGroup;
+			children = (
+				A495CCD11CA1D87B005BCBA5 /* Shared */,
+				A440121F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge */,
+				A44012331CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App */,
+				A44012421CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension */,
+				A440121E1CA1C0F900DB5259 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A440121E1CA1C0F900DB5259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A440121D1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge.app */,
+				A440122F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App.app */,
+				A440123E1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A440121F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				A44012201CA1C0F900DB5259 /* AppDelegate.swift */,
+				A44012221CA1C0F900DB5259 /* ViewController.swift */,
+				A495CCD61CA1DF2C005BCBA5 /* HapticDetailViewController.swift */,
+				A44012241CA1C0F900DB5259 /* Main.storyboard */,
+				A44012271CA1C0F900DB5259 /* Assets.xcassets */,
+				A44012291CA1C0F900DB5259 /* LaunchScreen.storyboard */,
+				A440122C1CA1C0F900DB5259 /* Info.plist */,
+			);
+			path = "2016-03-22-HapticChallenge";
+			sourceTree = "<group>";
+		};
+		A44012331CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A44012341CA1C0F900DB5259 /* Interface.storyboard */,
+				A44012371CA1C0F900DB5259 /* Assets.xcassets */,
+				A44012391CA1C0F900DB5259 /* Info.plist */,
+			);
+			path = "2016-03-22-HapticChallenge WatchKit App";
+			sourceTree = "<group>";
+		};
+		A44012421CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A44012571CA1C12F00DB5259 /* HapticRowController.swift */,
+				A44012431CA1C0F900DB5259 /* InterfaceController.swift */,
+				A495CCD41CA1DA70005BCBA5 /* HapticDetailInterfaceController.swift */,
+				A44012451CA1C0F900DB5259 /* ExtensionDelegate.swift */,
+				A44012471CA1C0F900DB5259 /* Assets.xcassets */,
+				A44012491CA1C0F900DB5259 /* Info.plist */,
+			);
+			path = "2016-03-22-HapticChallenge WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A495CCD11CA1D87B005BCBA5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A495CCD81CA1E4D2005BCBA5 /* HandoffHelper.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A440121C1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44012541CA1C0F900DB5259 /* Build configuration list for PBXNativeTarget "2016-03-22-HapticChallenge" */;
+			buildPhases = (
+				A44012191CA1C0F900DB5259 /* Sources */,
+				A440121A1CA1C0F900DB5259 /* Frameworks */,
+				A440121B1CA1C0F900DB5259 /* Resources */,
+				A44012531CA1C0F900DB5259 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A44012321CA1C0F900DB5259 /* PBXTargetDependency */,
+			);
+			name = "2016-03-22-HapticChallenge";
+			productName = "2016-03-22-HapticChallenge";
+			productReference = A440121D1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A440122E1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A44012501CA1C0F900DB5259 /* Build configuration list for PBXNativeTarget "2016-03-22-HapticChallenge WatchKit App" */;
+			buildPhases = (
+				A440122D1CA1C0F900DB5259 /* Resources */,
+				A440124F1CA1C0F900DB5259 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A44012411CA1C0F900DB5259 /* PBXTargetDependency */,
+			);
+			name = "2016-03-22-HapticChallenge WatchKit App";
+			productName = "2016-03-22-HapticChallenge WatchKit App";
+			productReference = A440122F1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A440123D1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A440124C1CA1C0F900DB5259 /* Build configuration list for PBXNativeTarget "2016-03-22-HapticChallenge WatchKit Extension" */;
+			buildPhases = (
+				A440123A1CA1C0F900DB5259 /* Sources */,
+				A440123B1CA1C0F900DB5259 /* Frameworks */,
+				A440123C1CA1C0F900DB5259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2016-03-22-HapticChallenge WatchKit Extension";
+			productName = "2016-03-22-HapticChallenge WatchKit Extension";
+			productReference = A440123E1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A44012151CA1C0F900DB5259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TB;
+				TargetAttributes = {
+					A440121C1CA1C0F900DB5259 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = B865ENT4P3;
+					};
+					A440122E1CA1C0F900DB5259 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A440123D1CA1C0F900DB5259 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = B865ENT4P3;
+					};
+				};
+			};
+			buildConfigurationList = A44012181CA1C0F900DB5259 /* Build configuration list for PBXProject "2016-03-22-HapticChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A44012141CA1C0F900DB5259;
+			productRefGroup = A440121E1CA1C0F900DB5259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A440121C1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge */,
+				A440122E1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App */,
+				A440123D1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A440121B1CA1C0F900DB5259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A440122B1CA1C0F900DB5259 /* LaunchScreen.storyboard in Resources */,
+				A44012281CA1C0F900DB5259 /* Assets.xcassets in Resources */,
+				A44012261CA1C0F900DB5259 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A440122D1CA1C0F900DB5259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44012381CA1C0F900DB5259 /* Assets.xcassets in Resources */,
+				A44012361CA1C0F900DB5259 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A440123C1CA1C0F900DB5259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44012481CA1C0F900DB5259 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A44012191CA1C0F900DB5259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A495CCD91CA1E4D2005BCBA5 /* HandoffHelper.swift in Sources */,
+				A44012231CA1C0F900DB5259 /* ViewController.swift in Sources */,
+				A495CCD71CA1DF2C005BCBA5 /* HapticDetailViewController.swift in Sources */,
+				A44012211CA1C0F900DB5259 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A440123A1CA1C0F900DB5259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A495CCDA1CA1E590005BCBA5 /* HandoffHelper.swift in Sources */,
+				A44012581CA1C12F00DB5259 /* HapticRowController.swift in Sources */,
+				A495CCD51CA1DA70005BCBA5 /* HapticDetailInterfaceController.swift in Sources */,
+				A44012461CA1C0F900DB5259 /* ExtensionDelegate.swift in Sources */,
+				A44012441CA1C0F900DB5259 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A44012321CA1C0F900DB5259 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A440122E1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit App */;
+			targetProxy = A44012311CA1C0F900DB5259 /* PBXContainerItemProxy */;
+		};
+		A44012411CA1C0F900DB5259 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A440123D1CA1C0F900DB5259 /* 2016-03-22-HapticChallenge WatchKit Extension */;
+			targetProxy = A44012401CA1C0F900DB5259 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A44012241CA1C0F900DB5259 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A44012251CA1C0F900DB5259 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A44012291CA1C0F900DB5259 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A440122A1CA1C0F900DB5259 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A44012341CA1C0F900DB5259 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A44012351CA1C0F900DB5259 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A440124A1CA1C0F900DB5259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A440124B1CA1C0F900DB5259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A440124D1CA1C0F900DB5259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "2016-03-22-HapticChallenge WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-03-22-HapticChallenge.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A440124E1CA1C0F900DB5259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "2016-03-22-HapticChallenge WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-03-22-HapticChallenge.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A44012511CA1C0F900DB5259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = _016_03_22_HapticChallenge_WatchKit_Extension;
+				INFOPLIST_FILE = "2016-03-22-HapticChallenge WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-03-22-HapticChallenge.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A44012521CA1C0F900DB5259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = _016_03_22_HapticChallenge_WatchKit_Extension;
+				INFOPLIST_FILE = "2016-03-22-HapticChallenge WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-03-22-HapticChallenge.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A44012551CA1C0F900DB5259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "2016-03-22-HapticChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-03-22-HapticChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A44012561CA1C0F900DB5259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "2016-03-22-HapticChallenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-03-22-HapticChallenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A44012181CA1C0F900DB5259 /* Build configuration list for PBXProject "2016-03-22-HapticChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A440124A1CA1C0F900DB5259 /* Debug */,
+				A440124B1CA1C0F900DB5259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A440124C1CA1C0F900DB5259 /* Build configuration list for PBXNativeTarget "2016-03-22-HapticChallenge WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A440124D1CA1C0F900DB5259 /* Debug */,
+				A440124E1CA1C0F900DB5259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44012501CA1C0F900DB5259 /* Build configuration list for PBXNativeTarget "2016-03-22-HapticChallenge WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44012511CA1C0F900DB5259 /* Debug */,
+				A44012521CA1C0F900DB5259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A44012541CA1C0F900DB5259 /* Build configuration list for PBXNativeTarget "2016-03-22-HapticChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A44012551CA1C0F900DB5259 /* Debug */,
+				A44012561CA1C0F900DB5259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A44012151CA1C0F900DB5259 /* Project object */;
+}

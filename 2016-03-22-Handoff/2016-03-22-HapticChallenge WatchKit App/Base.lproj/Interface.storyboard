@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="_016_03_22_HapticChallenge_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="ZVV-bz-X6Z">
+                            <items>
+                                <tableRow identifier="HapticCell" id="uyJ-Zy-Lpw" customClass="HapticRowController" customModule="_016_03_22_HapticChallenge_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="gZb-EB-dyA">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Label" id="KdS-RU-o5y"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="hapticNameLabel" destination="KdS-RU-o5y" id="Apl-z1-SuW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="hapticTypesTable" destination="ZVV-bz-X6Z" id="Fxd-4N-Jz6"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--HapticDetail-->
+        <scene sceneID="iwp-G2-OAZ">
+            <objects>
+                <controller identifier="HapticDetail" title="HapticDetail" id="Uqt-j1-Wn6" customClass="HapticDetailInterfaceController" customModule="_016_03_22_HapticChallenge_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Open in your iphone app" numberOfLines="0" id="gAc-Rx-iKy"/>
+                        <label alignment="center" verticalAlignment="bottom" text="https://" numberOfLines="0" id="X6I-fs-E45"/>
+                    </items>
+                    <connections>
+                        <outlet property="hapticLabel" destination="X6I-fs-E45" id="o8H-eM-W8B"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1084" y="644"/>
+        </scene>
+    </scenes>
+</document>

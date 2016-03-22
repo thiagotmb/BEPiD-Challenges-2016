@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vz1-g9-FsE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_016_03_22_HapticChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1w2-Wj-pdS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HapticCell" textLabel="TJm-wR-LFm" style="IBUITableViewCellStyleDefault" id="LiV-0P-PXy">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LiV-0P-PXy" id="Pxl-rI-1oh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TJm-wR-LFm">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dHL-Se-hgW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ozh-Nj-Rae"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1w2-Wj-pdS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="G0E-4T-RqM"/>
+                            <constraint firstItem="1w2-Wj-pdS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KAo-jE-7Oh"/>
+                            <constraint firstItem="1w2-Wj-pdS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="auN-lT-V8R"/>
+                            <constraint firstItem="1w2-Wj-pdS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eCT-zK-EVA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JrO-4P-gTp"/>
+                    <connections>
+                        <outlet property="hapticTableView" destination="1w2-Wj-pdS" id="7PP-hu-KOf"/>
+                        <segue destination="Iqb-tF-CzT" kind="show" identifier="ShowHapticDetail" id="bSc-3e-B0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="322"/>
+        </scene>
+        <!--HapticDetail-->
+        <scene sceneID="pEp-FJ-UWr">
+            <objects>
+                <viewController storyboardIdentifier="HapticDetail" title="HapticDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iqb-tF-CzT" customClass="HapticDetailViewController" customModule="_016_03_22_HapticChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b4K-uQ-bJr"/>
+                        <viewControllerLayoutGuide type="bottom" id="f2u-Ml-dP4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="git-Pm-sgZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HapticDetail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgJ-6E-Vgb">
+                                <rect key="frame" x="25" y="290" width="550" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZgJ-6E-Vgb" firstAttribute="centerX" secondItem="git-Pm-sgZ" secondAttribute="centerX" id="EJo-ZJ-QbU"/>
+                            <constraint firstItem="ZgJ-6E-Vgb" firstAttribute="width" secondItem="git-Pm-sgZ" secondAttribute="width" constant="-50" id="XlQ-kM-mYk"/>
+                            <constraint firstItem="ZgJ-6E-Vgb" firstAttribute="centerY" secondItem="git-Pm-sgZ" secondAttribute="centerY" id="n6B-ND-5sf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hapticDetailLabel" destination="ZgJ-6E-Vgb" id="rPh-O4-NGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSG-nm-waW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="333"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kVZ-0X-3Zj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vz1-g9-FsE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aVw-ez-E3y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VUl-TZ-e4I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqa-gc-bws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="322"/>
+        </scene>
+    </scenes>
+</document>
