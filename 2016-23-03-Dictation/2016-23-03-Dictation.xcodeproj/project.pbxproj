@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4AFD0E31CA312400014FF14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD0E21CA312400014FF14 /* AppDelegate.swift */; };
+		A4AFD0E51CA312400014FF14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD0E41CA312400014FF14 /* ViewController.swift */; };
+		A4AFD0E81CA312400014FF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AFD0E61CA312400014FF14 /* Main.storyboard */; };
+		A4AFD0EA1CA312400014FF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AFD0E91CA312400014FF14 /* Assets.xcassets */; };
+		A4AFD0ED1CA312400014FF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AFD0EB1CA312400014FF14 /* LaunchScreen.storyboard */; };
+		A4AFD0F21CA312400014FF14 /* 2016-23-03-Dictation WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A4AFD0F11CA312400014FF14 /* 2016-23-03-Dictation WatchKit App.app */; };
+		A4AFD0F81CA312400014FF14 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4AFD0F61CA312400014FF14 /* Interface.storyboard */; };
+		A4AFD0FA1CA312400014FF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AFD0F91CA312400014FF14 /* Assets.xcassets */; };
+		A4AFD1011CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4AFD1001CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4AFD1061CA312400014FF14 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD1051CA312400014FF14 /* InterfaceController.swift */; };
+		A4AFD1081CA312400014FF14 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFD1071CA312400014FF14 /* ExtensionDelegate.swift */; };
+		A4AFD10A1CA312400014FF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AFD1091CA312400014FF14 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4AFD0F31CA312400014FF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4AFD0D71CA312400014FF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4AFD0F01CA312400014FF14;
+			remoteInfo = "2016-23-03-Dictation WatchKit App";
+		};
+		A4AFD1021CA312400014FF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4AFD0D71CA312400014FF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4AFD0FF1CA312400014FF14;
+			remoteInfo = "2016-23-03-Dictation WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4AFD1111CA312400014FF14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4AFD1011CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4AFD1151CA312400014FF14 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A4AFD0F21CA312400014FF14 /* 2016-23-03-Dictation WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A4AFD0DF1CA312400014FF14 /* 2016-23-03-Dictation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2016-23-03-Dictation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AFD0E21CA312400014FF14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4AFD0E41CA312400014FF14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4AFD0E71CA312400014FF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4AFD0E91CA312400014FF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4AFD0EC1CA312400014FF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4AFD0EE1CA312400014FF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AFD0F11CA312400014FF14 /* 2016-23-03-Dictation WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2016-23-03-Dictation WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AFD0F71CA312400014FF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A4AFD0F91CA312400014FF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4AFD0FB1CA312400014FF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AFD1001CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "2016-23-03-Dictation WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4AFD1051CA312400014FF14 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A4AFD1071CA312400014FF14 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A4AFD1091CA312400014FF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4AFD10B1CA312400014FF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4AFD0DC1CA312400014FF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4AFD0FD1CA312400014FF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4AFD0D61CA312400014FF14 = {
+			isa = PBXGroup;
+			children = (
+				A4AFD0E11CA312400014FF14 /* 2016-23-03-Dictation */,
+				A4AFD0F51CA312400014FF14 /* 2016-23-03-Dictation WatchKit App */,
+				A4AFD1041CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension */,
+				A4AFD0E01CA312400014FF14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4AFD0E01CA312400014FF14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4AFD0DF1CA312400014FF14 /* 2016-23-03-Dictation.app */,
+				A4AFD0F11CA312400014FF14 /* 2016-23-03-Dictation WatchKit App.app */,
+				A4AFD1001CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4AFD0E11CA312400014FF14 /* 2016-23-03-Dictation */ = {
+			isa = PBXGroup;
+			children = (
+				A4AFD0E21CA312400014FF14 /* AppDelegate.swift */,
+				A4AFD0E41CA312400014FF14 /* ViewController.swift */,
+				A4AFD0E61CA312400014FF14 /* Main.storyboard */,
+				A4AFD0E91CA312400014FF14 /* Assets.xcassets */,
+				A4AFD0EB1CA312400014FF14 /* LaunchScreen.storyboard */,
+				A4AFD0EE1CA312400014FF14 /* Info.plist */,
+			);
+			path = "2016-23-03-Dictation";
+			sourceTree = "<group>";
+		};
+		A4AFD0F51CA312400014FF14 /* 2016-23-03-Dictation WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A4AFD0F61CA312400014FF14 /* Interface.storyboard */,
+				A4AFD0F91CA312400014FF14 /* Assets.xcassets */,
+				A4AFD0FB1CA312400014FF14 /* Info.plist */,
+			);
+			path = "2016-23-03-Dictation WatchKit App";
+			sourceTree = "<group>";
+		};
+		A4AFD1041CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A4AFD1051CA312400014FF14 /* InterfaceController.swift */,
+				A4AFD1071CA312400014FF14 /* ExtensionDelegate.swift */,
+				A4AFD1091CA312400014FF14 /* Assets.xcassets */,
+				A4AFD10B1CA312400014FF14 /* Info.plist */,
+			);
+			path = "2016-23-03-Dictation WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4AFD0DE1CA312400014FF14 /* 2016-23-03-Dictation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AFD1161CA312400014FF14 /* Build configuration list for PBXNativeTarget "2016-23-03-Dictation" */;
+			buildPhases = (
+				A4AFD0DB1CA312400014FF14 /* Sources */,
+				A4AFD0DC1CA312400014FF14 /* Frameworks */,
+				A4AFD0DD1CA312400014FF14 /* Resources */,
+				A4AFD1151CA312400014FF14 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4AFD0F41CA312400014FF14 /* PBXTargetDependency */,
+			);
+			name = "2016-23-03-Dictation";
+			productName = "2016-23-03-Dictation";
+			productReference = A4AFD0DF1CA312400014FF14 /* 2016-23-03-Dictation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4AFD0F01CA312400014FF14 /* 2016-23-03-Dictation WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AFD1121CA312400014FF14 /* Build configuration list for PBXNativeTarget "2016-23-03-Dictation WatchKit App" */;
+			buildPhases = (
+				A4AFD0EF1CA312400014FF14 /* Resources */,
+				A4AFD1111CA312400014FF14 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4AFD1031CA312400014FF14 /* PBXTargetDependency */,
+			);
+			name = "2016-23-03-Dictation WatchKit App";
+			productName = "2016-23-03-Dictation WatchKit App";
+			productReference = A4AFD0F11CA312400014FF14 /* 2016-23-03-Dictation WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A4AFD0FF1CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AFD10E1CA312400014FF14 /* Build configuration list for PBXNativeTarget "2016-23-03-Dictation WatchKit Extension" */;
+			buildPhases = (
+				A4AFD0FC1CA312400014FF14 /* Sources */,
+				A4AFD0FD1CA312400014FF14 /* Frameworks */,
+				A4AFD0FE1CA312400014FF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "2016-23-03-Dictation WatchKit Extension";
+			productName = "2016-23-03-Dictation WatchKit Extension";
+			productReference = A4AFD1001CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4AFD0D71CA312400014FF14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TB;
+				TargetAttributes = {
+					A4AFD0DE1CA312400014FF14 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A4AFD0F01CA312400014FF14 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A4AFD0FF1CA312400014FF14 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A4AFD0DA1CA312400014FF14 /* Build configuration list for PBXProject "2016-23-03-Dictation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4AFD0D61CA312400014FF14;
+			productRefGroup = A4AFD0E01CA312400014FF14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4AFD0DE1CA312400014FF14 /* 2016-23-03-Dictation */,
+				A4AFD0F01CA312400014FF14 /* 2016-23-03-Dictation WatchKit App */,
+				A4AFD0FF1CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4AFD0DD1CA312400014FF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AFD0ED1CA312400014FF14 /* LaunchScreen.storyboard in Resources */,
+				A4AFD0EA1CA312400014FF14 /* Assets.xcassets in Resources */,
+				A4AFD0E81CA312400014FF14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4AFD0EF1CA312400014FF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AFD0FA1CA312400014FF14 /* Assets.xcassets in Resources */,
+				A4AFD0F81CA312400014FF14 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4AFD0FE1CA312400014FF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AFD10A1CA312400014FF14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4AFD0DB1CA312400014FF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AFD0E51CA312400014FF14 /* ViewController.swift in Sources */,
+				A4AFD0E31CA312400014FF14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4AFD0FC1CA312400014FF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AFD1081CA312400014FF14 /* ExtensionDelegate.swift in Sources */,
+				A4AFD1061CA312400014FF14 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4AFD0F41CA312400014FF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4AFD0F01CA312400014FF14 /* 2016-23-03-Dictation WatchKit App */;
+			targetProxy = A4AFD0F31CA312400014FF14 /* PBXContainerItemProxy */;
+		};
+		A4AFD1031CA312400014FF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4AFD0FF1CA312400014FF14 /* 2016-23-03-Dictation WatchKit Extension */;
+			targetProxy = A4AFD1021CA312400014FF14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4AFD0E61CA312400014FF14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4AFD0E71CA312400014FF14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4AFD0EB1CA312400014FF14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4AFD0EC1CA312400014FF14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A4AFD0F61CA312400014FF14 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4AFD0F71CA312400014FF14 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4AFD10C1CA312400014FF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4AFD10D1CA312400014FF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4AFD10F1CA312400014FF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "2016-23-03-Dictation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-23-03-Dictation.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A4AFD1101CA312400014FF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "2016-23-03-Dictation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-23-03-Dictation.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A4AFD1131CA312400014FF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = _016_23_03_Dictation_WatchKit_Extension;
+				INFOPLIST_FILE = "2016-23-03-Dictation WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-23-03-Dictation.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A4AFD1141CA312400014FF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = _016_23_03_Dictation_WatchKit_Extension;
+				INFOPLIST_FILE = "2016-23-03-Dictation WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-23-03-Dictation.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A4AFD1171CA312400014FF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "2016-23-03-Dictation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-23-03-Dictation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A4AFD1181CA312400014FF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "2016-23-03-Dictation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TB.-016-23-03-Dictation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4AFD0DA1CA312400014FF14 /* Build configuration list for PBXProject "2016-23-03-Dictation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AFD10C1CA312400014FF14 /* Debug */,
+				A4AFD10D1CA312400014FF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4AFD10E1CA312400014FF14 /* Build configuration list for PBXNativeTarget "2016-23-03-Dictation WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AFD10F1CA312400014FF14 /* Debug */,
+				A4AFD1101CA312400014FF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4AFD1121CA312400014FF14 /* Build configuration list for PBXNativeTarget "2016-23-03-Dictation WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AFD1131CA312400014FF14 /* Debug */,
+				A4AFD1141CA312400014FF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A4AFD1161CA312400014FF14 /* Build configuration list for PBXNativeTarget "2016-23-03-Dictation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4AFD1171CA312400014FF14 /* Debug */,
+				A4AFD1181CA312400014FF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4AFD0D71CA312400014FF14 /* Project object */;
+}
