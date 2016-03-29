@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41B4ED51CAAFE8D007CB420 /* MessageRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B4ED41CAAFE8D007CB420 /* MessageRowController.swift */; };
 		A4EB12CA1CA9CB770088D942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB12C91CA9CB770088D942 /* AppDelegate.swift */; };
 		A4EB12CC1CA9CB770088D942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB12CB1CA9CB770088D942 /* ViewController.swift */; };
 		A4EB12CF1CA9CB770088D942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EB12CD1CA9CB770088D942 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A41B4ED41CAAFE8D007CB420 /* MessageRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRowController.swift; sourceTree = "<group>"; };
 		A4EB12C61CA9CB770088D942 /* MessagesChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagesChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EB12C91CA9CB770088D942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EB12CB1CA9CB770088D942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A4EB12EC1CA9CB770088D942 /* InterfaceController.swift */,
+				A41B4ED41CAAFE8D007CB420 /* MessageRowController.swift */,
 				A4EB12EE1CA9CB770088D942 /* ExtensionDelegate.swift */,
 				A4EB12F01CA9CB770088D942 /* Assets.xcassets */,
 				A4EB12F21CA9CB770088D942 /* Info.plist */,
@@ -306,6 +309,7 @@
 			files = (
 				A4EB12EF1CA9CB770088D942 /* ExtensionDelegate.swift in Sources */,
 				A4EB13041CA9D2DF0088D942 /* MessageModel.swift in Sources */,
+				A41B4ED51CAAFE8D007CB420 /* MessageRowController.swift in Sources */,
 				A4EB12ED1CA9CB770088D942 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +543,7 @@
 				A4EB12F71CA9CB770088D942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4EB12F91CA9CB770088D942 /* Build configuration list for PBXNativeTarget "MessagesChallenge WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +552,7 @@
 				A4EB12FB1CA9CB770088D942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4EB12FD1CA9CB770088D942 /* Build configuration list for PBXNativeTarget "MessagesChallenge" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +561,7 @@
 				A4EB12FF1CA9CB770088D942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

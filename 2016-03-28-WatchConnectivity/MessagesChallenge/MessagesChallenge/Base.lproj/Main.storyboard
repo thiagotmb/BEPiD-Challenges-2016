@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,35 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wUZ-sf-jHp">
-                                <rect key="frame" x="1" y="0.0" width="598" height="550"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AYN-ga-WSN" customClass="MessageRowTableViewCell" customModule="MessagesChallenge" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49.5" width="598" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AYN-ga-WSN" id="buu-TP-yTq">
-                                            <rect key="frame" x="0.0" y="0.0" width="598" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mensagem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-By-8Lc">
-                                                    <rect key="frame" x="30" y="11" width="85" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="messageLabel" destination="Ygc-By-8Lc" id="bcd-or-VRx"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tlR-LG-bYu"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="brT-Ih-Ykc"/>
-                                </connections>
-                            </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omh-R4-O7J">
                                 <rect key="frame" x="0.0" y="550" width="600" height="44"/>
                                 <constraints>
@@ -54,7 +26,7 @@
                                 <items>
                                     <barButtonItem style="plain" id="Acz-PG-hGH">
                                         <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="mdG-at-NMG">
-                                            <rect key="frame" x="20" y="7" width="287" height="30"/>
+                                            <rect key="frame" x="20" y="7" width="239" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -72,6 +44,69 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="162" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wUZ-sf-jHp">
+                                <rect key="frame" x="1" y="0.0" width="598" height="550"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MessageCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="165" id="AYN-ga-WSN" customClass="MessageRowTableViewCell" customModule="MessagesChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="598" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AYN-ga-WSN" id="buu-TP-yTq">
+                                            <rect key="frame" x="0.0" y="0.0" width="598" height="164.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-By-8Lc">
+                                                    <rect key="frame" x="13" y="13" width="537" height="139"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Iphone" translatesAutoresizingMaskIntoConstraints="NO" id="Hoc-O8-oEi">
+                                                    <rect key="frame" x="555" y="65" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="aNp-jb-xTQ"/>
+                                                        <constraint firstAttribute="width" constant="35" id="zI3-v3-wim"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qFk-3S-gTs">
+                                                    <rect key="frame" x="224" y="7.5" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="4BG-z2-lvc"/>
+                                                        <constraint firstAttribute="height" constant="150" id="AsI-G3-poT"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Hoc-O8-oEi" secondAttribute="trailing" id="8mf-MO-YFK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qFk-3S-gTs" secondAttribute="bottom" constant="-1.5" id="Aid-ca-nKH"/>
+                                                <constraint firstItem="Hoc-O8-oEi" firstAttribute="centerY" secondItem="buu-TP-yTq" secondAttribute="centerY" id="CRg-3G-2sh"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ygc-By-8Lc" secondAttribute="bottom" constant="5" id="PY3-vq-XKi"/>
+                                                <constraint firstItem="Ygc-By-8Lc" firstAttribute="top" secondItem="buu-TP-yTq" secondAttribute="topMargin" constant="5" id="Rsz-pj-QI5"/>
+                                                <constraint firstItem="qFk-3S-gTs" firstAttribute="centerY" secondItem="buu-TP-yTq" secondAttribute="centerY" id="Ynx-IC-Fty"/>
+                                                <constraint firstItem="Hoc-O8-oEi" firstAttribute="top" secondItem="buu-TP-yTq" secondAttribute="topMargin" constant="-5" id="blG-ie-cdM"/>
+                                                <constraint firstItem="Ygc-By-8Lc" firstAttribute="leading" secondItem="buu-TP-yTq" secondAttribute="leadingMargin" constant="5" id="kaq-3p-G2V"/>
+                                                <constraint firstItem="qFk-3S-gTs" firstAttribute="centerX" secondItem="buu-TP-yTq" secondAttribute="centerX" id="saO-dX-04c"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ygc-By-8Lc" secondAttribute="trailing" constant="40" id="tSq-ae-p5C"/>
+                                                <constraint firstAttribute="topMargin" secondItem="qFk-3S-gTs" secondAttribute="top" id="tX6-wC-7BW"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="blG-ie-cdM"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageImage" destination="qFk-3S-gTs" id="dlW-Ki-Kd6"/>
+                                            <outlet property="messageLabel" destination="Ygc-By-8Lc" id="bcd-or-VRx"/>
+                                            <outlet property="messageSenderImage" destination="Hoc-O8-oEi" id="r8Z-2h-1ap"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tlR-LG-bYu"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="brT-Ih-Ykc"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -95,4 +130,7 @@
             <point key="canvasLocation" x="280" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Iphone" width="32" height="32"/>
+    </resources>
 </document>

@@ -20,7 +20,6 @@ class ViewController: UIViewController, WCSessionDelegate {
             session = WCSession.defaultSession()
             session.delegate = self
             session.activateSession()
-            session.transferUserInfo(["helloUser":"My user info was arrived"])
             
             if let fileURL = NSBundle.mainBundle().URLForResource("appletv", withExtension: "jpg") {
                 session.transferFile(fileURL, metadata: ["name" : "Apple TV"])
