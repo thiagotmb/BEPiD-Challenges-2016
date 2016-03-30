@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NotificationSample_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Label" id="kWS-Y9-Lkn"/>
+                    </items>
+                    <connections>
+                        <outlet property="customLabel" destination="kWS-Y9-Lkn" id="0ER-3P-1FE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="sashColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="kWj-yP-V8t">
+            <objects>
+                <notificationController id="gvs-7u-fVe">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="fLk-Fw-IJr">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="g3G-e8-f3R">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="0.1215686275" green="0.93725490199999995" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="fLk-Fw-IJr" id="aAZ-KE-mbF"/>
+                        <segue destination="bfX-P3-MHc" kind="relationship" relationship="dynamicNotificationInterface" id="Zs8-ch-o9j"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="936"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="NotificationSample_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Wait" id="WOj-mG-rWP"/>
+                        <imageView alignment="center" verticalAlignment="center" hidden="YES" image="explosion" id="EZz-Ui-W16"/>
+                        <timer alignment="center" id="Cmd-66-wbB"/>
+                    </items>
+                    <connections>
+                        <outlet property="notificationImage" destination="EZz-Ui-W16" id="iuj-bT-vAI"/>
+                        <outlet property="notificationTimer" destination="Cmd-66-wbB" id="SVa-ty-rqx"/>
+                        <outlet property="notificationtitle" destination="WOj-mG-rWP" id="rJm-KE-psX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="wvZ-eT-Xzk">
+            <objects>
+                <controller id="bfX-P3-MHc"/>
+            </objects>
+            <point key="canvasLocation" x="520" y="936"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="c28-cj-lV2">
+            <objects>
+                <notificationController id="sFc-Ok-gXd">
+                    <items>
+                        <label alignment="left" text="Mensagems Enviadas" id="uTj-mG-o6M"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="messagesReport" id="lOO-68-wPs">
+                        <color key="sashColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="uTj-mG-o6M" id="Zm5-Gr-ddh"/>
+                        <segue destination="Ebb-x2-qX9" kind="relationship" relationship="dynamicNotificationInterface" id="b2E-bQ-ddn"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="920" y="941"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MessagesChallenge_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" verticalAlignment="bottom" id="6Mn-KT-0B3">
+                            <items>
+                                <tableRow identifier="MessageRow" id="bah-XF-iYD" customClass="MessageRowController" customModule="MessagesChallenge_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="rts-wN-i86">
+                                        <items>
+                                            <group width="0.75" alignment="left" verticalAlignment="center" id="Efr-lO-QLE" userLabel="LabelGroup">
+                                                <items>
+                                                    <label alignment="center" verticalAlignment="center" text="Label" numberOfLines="0" id="CUA-7b-X0X">
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <imageView width="35" height="35" alignment="right" verticalAlignment="center" image="Watch" id="HwA-P5-k1E">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81734913793103448" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="messageLabel" destination="CUA-7b-X0X" id="hSj-R1-dmv"/>
+                                        <outlet property="messageSenderImage" destination="HwA-P5-k1E" id="GXD-54-Nst"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="MessageRowImage" id="TqM-bt-OlW" customClass="MessageRowController" customModule="MessagesChallenge_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="5qO-b7-E96">
+                                        <items>
+                                            <group width="0.75" alignment="left" verticalAlignment="center" id="lX5-3Q-lgE" userLabel="LabelGroup">
+                                                <items>
+                                                    <imageView width="100" height="100" alignment="left" id="CYD-8t-m17"/>
+                                                </items>
+                                            </group>
+                                            <imageView width="35" height="35" alignment="right" verticalAlignment="center" image="Watch" id="Xxc-1C-0E7">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </imageView>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81734913789999997" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="messageImage" destination="CYD-8t-m17" id="XFX-Tc-XnQ"/>
+                                        <outlet property="messageSenderImage" destination="Xxc-1C-0E7" id="naT-26-cLI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="New Message" id="GgX-LF-oxq">
+                            <connections>
+                                <action selector="sendNewMessage" destination="AgC-eL-Hgc" id="Uig-h1-Ubh"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="6Mn-KT-0B3" id="L8N-Tr-uCp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="920" y="644"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="g15-PU-ZWY">
+            <objects>
+                <controller id="Ebb-x2-qX9" customClass="NotificationController" customModule="MessagesChallenge_WatchKit_Extension">
+                    <items>
+                        <separator alignment="left" id="Zja-OC-bbH">
+                            <color key="color" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="H9w-mh-VUa">
+                            <items>
+                                <label alignment="center" text="Sent: " id="goB-8g-tX9"/>
+                                <label alignment="center" text="0" id="Q1U-ms-f3S"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="2p1-Wx-EKD">
+                            <color key="color" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="jyZ-dh-sKe">
+                            <items>
+                                <label alignment="center" text="Received: " id="yRd-rg-GeV"/>
+                                <label alignment="center" text="0" id="XXi-TD-9hw"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="4NZ-9n-EVU">
+                            <color key="color" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label alignment="center" text="Last image Sent" id="9Mf-jo-JiY"/>
+                        <imageView alignment="left" id="Hfr-th-iKQ"/>
+                    </items>
+                    <color key="backgroundColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="lastImageSent" destination="Hfr-th-iKQ" id="mMu-GM-9iL"/>
+                        <outlet property="messagesSentAmount" destination="Q1U-ms-f3S" id="5kX-BK-fGO"/>
+                        <outlet property="receivedAmount" destination="XXi-TD-9hw" id="yFJ-cC-nS3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1220" y="941"/>
+        </scene>
+    </scenes>
+</document>

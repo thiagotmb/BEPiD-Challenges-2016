@@ -1,0 +1,14 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Test message",
+            "title": "Optional title"
+        },
+        "category": "messagesReport"
+    },
+    
+    "WatchKit Simulator Actions": [
+    
+                                   ],
+    
+}
