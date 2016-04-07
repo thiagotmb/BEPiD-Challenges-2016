@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TouristComplicationChallenge_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="PUT-pM-CmK">
+                            <items>
+                                <tableRow identifier="TaskRow" id="PDJ-EZ-OaC" customClass="RowController" customModule="TouristComplicationChallenge_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="zVf-XQ-oLI">
+                                        <items>
+                                            <label alignment="center" text="6:40pm" id="pef-wV-5Yy"/>
+                                            <label alignment="center" text="Hotel Checkin" id="ZWm-vb-iWn"/>
+                                            <button width="1" alignment="left" title="Done" id="oz6-Wa-an1">
+                                                <connections>
+                                                    <action selector="doneAction" destination="PDJ-EZ-OaC" id="aGF-lD-ppT"/>
+                                                </connections>
+                                            </button>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="btnDone" destination="oz6-Wa-an1" id="CAZ-Rs-qJI"/>
+                                        <outlet property="lblTaskHour" destination="pef-wV-5Yy" id="YLy-E0-2gs"/>
+                                        <outlet property="lblTaskName" destination="ZWm-vb-iWn" id="2j3-wU-d9U"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="PUT-pM-CmK" id="X0y-xa-4ru"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
