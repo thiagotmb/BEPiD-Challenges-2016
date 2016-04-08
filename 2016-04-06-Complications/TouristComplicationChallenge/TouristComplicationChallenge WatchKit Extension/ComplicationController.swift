@@ -33,29 +33,23 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         handler([.Forward, .Backward])
     }
     
-//    func getTimelineStartDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-//        handler(nil)
-//    }
-//    
-//    func getTimelineEndDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
-//        handler(nil)
-//    }
-//    
-//    func getPrivacyBehaviorForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationPrivacyBehavior) -> Void) {
-//        handler(.ShowOnLockScreen)
-//    }
+
     
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
         // Call the handler with the current timeline entry
         
-        let tasks = TaskModel.savedTasks
+        
+        var emoji = "🤑"
+        if TaskModel.completedTasks().count < 3 {
+           emoji = "😐"
+        }
         
         if complication.family == .UtilitarianLarge {
             
             let complicationTemplate = CLKComplicationTemplateUtilitarianLargeFlat()
-            complicationTemplate.textProvider = CLKSimpleTextProvider(text: (tasks?.first?.hour.toString())!)
+            complicationTemplate.textProvider = CLKSimpleTextProvider(text: ("6:40" + emoji))
             let complicationEntry = CLKComplicationTimelineEntry(date: NSDate(), complicationTemplate: complicationTemplate)
             handler(complicationEntry)
         }
@@ -65,22 +59,18 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         
     }
     
-//    func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
-//        // Call the handler with the timeline entries prior to the given date
-//        handler(nil)
-//    }
-//    
-//    func getTimelineEntriesForComplication(complication: CLKComplication, afterDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
-//        // Call the handler with the timeline entries after to the given date
-//        handler(nil)
-//    }
-    
-    // MARK: - Update Scheduling
-//    
-//    func getNextRequestedUpdateDateWithHandler(handler: (NSDate?) -> Void) {
-//        // Call the handler with the date when you would next like to be given the opportunity to update your complication content
-//        handler(nil);
-//    }
+    func reloadData() {
+        // 1
+        let server = CLKComplicationServer.sharedInstance()
+        guard let complications = server.activeComplications
+            where complications.count > 0 else { return }
+        
+        for complication in complications  {
+            server.reloadTimelineForComplication(complication)
+        }
+
+    }
+
     
   
     

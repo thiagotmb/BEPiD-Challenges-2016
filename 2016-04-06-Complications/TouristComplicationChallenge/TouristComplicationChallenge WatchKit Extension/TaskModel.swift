@@ -58,7 +58,14 @@ class TaskModel: NSObject {
         }
         
     }
+        
     
+    static func completedTasks() -> [TaskModel] {
+        let completedTasks = TaskModel.savedTasks!.filter { (currentTask: TaskModel) -> Bool in
+            return currentTask.isDone
+        }
+        return completedTasks
+    }
     
     internal func toDictionary() -> [String : AnyObject] {
         
