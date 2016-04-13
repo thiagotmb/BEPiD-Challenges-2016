@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Pedometer_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Cso-TY-z2m">
+                            <items>
+                                <label alignment="center" text="Last 3 hours" id="fcS-Gv-kbO"/>
+                                <group width="1" alignment="left" id="d0F-cp-afL">
+                                    <items>
+                                        <label alignment="left" text="Steps:" id="0A0-kQ-wEL"/>
+                                        <label alignment="center" text="3" id="iaE-Hg-nTf"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="NVO-1A-YT8">
+                                    <items>
+                                        <label alignment="left" text="Distance:" id="wkC-6P-b8O"/>
+                                        <label alignment="center" text="3" id="Ci6-sZ-lpn"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="I2z-aD-dQF">
+                                    <items>
+                                        <label alignment="left" text="Pace:" id="hey-ST-95P"/>
+                                        <label alignment="center" text="3" id="f3D-6y-f4V"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Last 3 hours" id="9Sg-9W-cAX">
+                            <connections>
+                                <action selector="showLast3Hours" destination="AgC-eL-Hgc" id="A8M-VI-zC9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Last 12 hours" id="D54-Sh-Lar">
+                            <connections>
+                                <action selector="showLast12Hours" destination="AgC-eL-Hgc" id="T92-6j-vLS"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Last 24 hours" id="Apt-PJ-2KQ">
+                            <connections>
+                                <action selector="showLast24Hours" destination="AgC-eL-Hgc" id="TNg-eH-vdD"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Last 3 days" id="zfx-4e-dTf">
+                            <connections>
+                                <action selector="showLast3Days" destination="AgC-eL-Hgc" id="vYt-nV-Nly"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblDistance" destination="Ci6-sZ-lpn" id="Hqf-ra-j0b"/>
+                        <outlet property="lblInterval" destination="fcS-Gv-kbO" id="1te-ey-jxS"/>
+                        <outlet property="lblPace" destination="f3D-6y-f4V" id="jXp-H1-kVP"/>
+                        <outlet property="lblSteps" destination="iaE-Hg-nTf" id="F4F-Uz-t0N"/>
+                        <segue destination="kZ4-Wp-UKw" kind="relationship" relationship="nextPage" id="IB1-it-2w6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Average Steps Interface Controller-->
+        <scene sceneID="cV3-lU-FBF">
+            <objects>
+                <controller id="kZ4-Wp-UKw" customClass="AverageStepsInterfaceController" customModule="Pedometer_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Last 3 days average steps" textAlignment="center" numberOfLines="2" id="WeL-qU-UmZ"/>
+                        <label alignment="center" verticalAlignment="center" text="3 " id="yxZ-gm-kWh"/>
+                        <label alignment="center" verticalAlignment="center" text="steps per day" id="zpd-ee-QyK"/>
+                    </items>
+                    <connections>
+                        <outlet property="lblAverageSteps" destination="yxZ-gm-kWh" id="qON-1U-Clk"/>
+                        <segue destination="M72-WM-xMm" kind="relationship" relationship="nextPage" id="oKv-pN-8HU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="548" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="203" y="847"/>
+        </scene>
+        <!--Acelerometer Test Interface Controller-->
+        <scene sceneID="z0G-Mt-bSF">
+            <objects>
+                <controller id="M72-WM-xMm" customClass="AcelerometerTestInterfaceController" customModule="Pedometer_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Brj-t7-nGJ">
+                            <items>
+                                <label alignment="left" text="Acelerometer test" id="ZEJ-jP-e7P"/>
+                                <group width="1" alignment="left" id="HDp-HI-dMo">
+                                    <items>
+                                        <label alignment="left" text="x:" id="Kzw-hG-W6Y"/>
+                                        <label alignment="center" text="30.0" id="cFG-6O-tHc"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" verticalAlignment="center" id="aqz-xK-uUo">
+                                    <items>
+                                        <label alignment="left" text="y:" id="yWG-na-XvL"/>
+                                        <label alignment="center" text="24.0" id="eUH-qQ-QlG"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" verticalAlignment="bottom" id="ziG-qV-61h">
+                                    <items>
+                                        <label alignment="left" text="z:" id="gcj-nu-ZTo"/>
+                                        <label alignment="center" text="12.0" id="AHc-be-RXa"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lblX" destination="cFG-6O-tHc" id="dou-KQ-wgk"/>
+                        <outlet property="lblY" destination="eUH-qQ-QlG" id="hlo-7p-0Qh"/>
+                        <outlet property="lblZ" destination="AHc-be-RXa" id="2xB-Rf-PtO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="978" y="345"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Pedometer_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="847"/>
+        </scene>
+    </scenes>
+</document>

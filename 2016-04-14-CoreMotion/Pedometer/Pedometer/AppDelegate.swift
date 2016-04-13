@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NodeJSClientSample
+//  Pedometer
 //
-//  Created by Thiago-Bernardes on 4/11/16.
+//  Created by Thiago-Bernardes on 4/13/16.
 //  Copyright © 2016 TB. All rights reserved.
 //
 
@@ -15,8 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-       let deu = iOSRequest.getArrayDictionary()
         // Override point for customization after application launch.
         return true
     }

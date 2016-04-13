@@ -19,6 +19,8 @@
 		A45A3A891CBC2BC500859025 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A3A881CBC2BC500859025 /* InterfaceController.swift */; };
 		A45A3A8B1CBC2BC500859025 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A3A8A1CBC2BC500859025 /* ExtensionDelegate.swift */; };
 		A45A3A8D1CBC2BC500859025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45A3A8C1CBC2BC500859025 /* Assets.xcassets */; };
+		A45A3AA01CBC2C3C00859025 /* iOSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A3A9F1CBC2C3C00859025 /* iOSRequest.swift */; };
+		A45A3AA11CBC2C3C00859025 /* iOSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A3A9F1CBC2C3C00859025 /* iOSRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,7 @@
 		A45A3A8A1CBC2BC500859025 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A45A3A8C1CBC2BC500859025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45A3A8E1CBC2BC500859025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A45A3A9F1CBC2C3C00859025 /* iOSRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		A45A3A591CBC2BC500859025 = {
 			isa = PBXGroup;
 			children = (
+				A45A3A9F1CBC2C3C00859025 /* iOSRequest.swift */,
 				A45A3A641CBC2BC500859025 /* NodeJSClientSample */,
 				A45A3A781CBC2BC500859025 /* NodeJSClientSample WatchKit App */,
 				A45A3A871CBC2BC500859025 /* NodeJSClientSample WatchKit Extension */,
@@ -288,6 +292,7 @@
 			files = (
 				A45A3A681CBC2BC500859025 /* ViewController.swift in Sources */,
 				A45A3A661CBC2BC500859025 /* AppDelegate.swift in Sources */,
+				A45A3AA01CBC2C3C00859025 /* iOSRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +302,7 @@
 			files = (
 				A45A3A8B1CBC2BC500859025 /* ExtensionDelegate.swift in Sources */,
 				A45A3A891CBC2BC500859025 /* InterfaceController.swift in Sources */,
+				A45A3AA11CBC2C3C00859025 /* iOSRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
